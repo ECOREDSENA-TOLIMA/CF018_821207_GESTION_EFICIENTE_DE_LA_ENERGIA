@@ -3,8 +3,7 @@
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
 
-    p Con el diagrama de actividades se termina la descripción de las tres técnicas usadas para la especificación y el análisis de requisitos, como se pudo analizar cada una de las técnicas nos brinda características para lograr representar gráficamente y de una forma clara, los requisitos que un usuario necesita poder cumplir satisfactoriamente con las solicitudes de los clientes y usuarios, por otro lado se pueden usar todas las técnicas en una especificación y análisis de requisitos si se ve la necesidad.
-    p.mb-5 A continuación, se muestra un mapa conceptual con los elementos más importantes desarrollados en este componente.
+    p.mb-5 El procesamiento y análisis de datos son elementos clave en la toma de decisiones basada en información cuantitativa. Dentro de este campo, se abordan diversos subtemas, como la probabilidad y estadística, que incluyen el estudio de variables continuas, distribuciones bidimensionales, discretas y continuas, así como muestreo, estimación, prueba de hipótesis y combinatoria. Además, se exploran métodos para procesar, graficar y analizar datos, como métodos de investigación, tipos de gráficas y herramientas software ampliamente utilizadas en esta área. Estas habilidades permiten comprender mejor los datos, identificar patrones y tomar decisiones informadas en diversos campos.
 
     .row.justify-content-center
       .col-lg-10.mb-5
