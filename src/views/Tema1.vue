@@ -426,8 +426,8 @@
           p.mb-0 Definamos más un par de términos utilizados en nuestra definición. Una variable en estadística no es lo mismo que una variable en álgebra. En estadística, una variable es algo que nos da datos. Algunos ejemplos de variables en las estadísticas pueden incluir edad, color de ojos, altura, número de hermanos, sexo o número de mascotas. Nuestra definición de variable continua también menciona que es cuantitativa. Los datos cuantitativos involucran cantidades o números. En los ejemplos de variables enumerados anteriormente, su edad, altura, número de hermanos y número de mascotas son todas variables cuantitativas.
 
     
-    .tarjeta--container.row.mb-5
-      .col-md.tarjeta.color-acento-botones.px-5.py-3
+    .tarjeta--container.row.mb-5(data-aos="fade-down-right")
+      .col-md.tarjeta.tarjeta--azul.px-5.py-3
         .row.justify-content-center.mb-4
           .col-6
             div.formulas.mb-3
@@ -441,10 +441,212 @@
         p Las variables continuas son variables que miden algo. Un buen ejemplo de variable continua es cuántos galones de leche da una vaca. Hasta donde se sabe, las vacas no saben cómo dejar de producir o dar leche después de exactamente 4 galones. Bessie puede dar 4,17 galones el lunes, 3,89 galones el martes y 4,2 galones el miércoles. Observe que las variables continuas nos permiten tener decimales o fracciones.
 
 
+    Separador
+    #t_1_2.titulo-segundo.color-acento-botones(data-aos="fade-right")
+      h2 1.2 Distribuciones bidimensionales, diagramas de dispersión y rectas de regresión
+
+    p.mb-5(data-aos="fade-right") En el siguiente recurso, se invita a descubrir todo sobre las distribuciones bidimensionales, diagramas de dispersión y rectas de regresión.
+
+    .row.mb-4.justify-content-center.align-items-center
+      .col-12.mb-5(data-aos="fade-right")
+        ol.lista-ol--cuadro
+          li 
+            .lista-ol--cuadro__vineta
+              span a
+            | Distribuciones Bidimensionales
+      .col-12.col-md-4.mb-5(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-41.svg', alt='')
+      .col-12.col-md-8.mb-5(data-aos="fade-right")
+        p En la estadística, a la distribución donde interceden dos variables, x e y, se le denomina distribución bidimensional, esto significa que a cada individuo le pertenecen dos valores, xi, yi. Y al momento de ser representados en un plano o diagrama cartesiano se les debe considerar como coordenadas de un solo punto (xi, yi). Así, toda esta distribución se visualizará como un conjunto de puntos y cada punto corresponde a un individuo de la distribución. 
+        .cajon.color-acento-botones.p-4.mb-2
+          p.mb-0 Como ejemplo típico de distribución bidimensional, se pueden tomar los errores de precisión del fuego de artillería. El error total se compone de dos desviaciones independientes: error en la distancia de disparo X y desviación lateral Y de la dirección de disparo. Un número tan relativamente pequeño de puntos clasifica esta distribución entre las distribuciones discretas. 
+      
+      .col-12.mt-4.mb-0(data-aos="fade-right")
+        ol.lista-ol--cuadro
+          li 
+            .lista-ol--cuadro__vineta
+              span b
+            | Correlación
+      .col-12.col-md-8.mb-5(data-aos="fade-right")
+        p La correlación es una medida estadística que indica la relación lineal entre dos variables. No implica una relación de causa y efecto, sino que cuantifica la fuerza de la relación. Se utiliza un coeficiente de correlación, r, para medir la correlación. Además, se pueden realizar pruebas estadísticas para determinar la significancia de la correlación. Sin embargo, la correlación tiene limitaciones, ya que no puede tener en cuenta otras variables que puedan influir en la relación entre las dos variables analizadas. 
+      .col-12.col-md-4.mb-5(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-42.png', alt='')
+          
+    p.mb-5(data-aos="fade-right") La correlación no implica causalidad y no describe relaciones curvilíneas. Sin embargo, es útil para analizar relaciones simples entre datos. Por ejemplo, al examinar datos de campings en un parque de montaña, se puede utilizar la correlación para determinar si hay una relación entre la elevación del camping y la temperatura alta en verano. Una correlación negativa indica que a medida que aumenta la elevación, la temperatura tiende a descender. 
+
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Diagramas de dispersión
+
+
+    .row.mb-5.justify-content-center.align-items-center
+      .col-12.col-md-4.mb-5.mb-lg-0(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-43.png', alt='')  
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        p Los diagramas de dispersión son herramientas matemáticas convenientes para estudiar la correlación entre dos variables aleatorias. Como su nombre indica, son una forma de hoja de papel sobre la que se encuentran dispersos los puntos de datos correspondientes a las variables de interés. 
+        .cajon.color-acento-botones.p-4.mb-2
+          p.mb-0 A juzgar por la forma del patrón que forman los puntos de datos en esta hoja de papel, podemos determinar la asociación entre las dos variables y aplicar la técnica de análisis de correlación más adecuada.
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.col-lg-10(data-aos="fade-right")
+        .titulo-sexto.color-acento-botones
+          p.titulo.pb-0.mb-0 #[b Figura 2.] #[i a. Correlación débil, b. Correlación fuerte, c. correlación inversa] 
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-44.svg', alt='')  
+          figcaption Nota. Tomada de https://www.monografias.com/trabajos82/regresion-y-correlacion-lineal/regresion-y-correlacion-lineal2.shtml
+        
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Interpretación de diagramas de dispersión
+            
+
+    .row.mb-5.justify-content-center.align-items-center
+      .col-12.col-md-9.mb-5.mb-lg-0(data-aos="fade-left")
+        p Los diagramas de dispersión entre dos variables aleatorias presentan las variables como sus ejes x e y. Podemos tomar cualquier variable como variable independiente en tal caso (la otra variable es la dependiente) y, en consecuencia, graficar cada punto de datos en el gráfico (xi, yi). La totalidad de todos los puntos graficados forma el diagrama de dispersión. Basándonos en las diferentes formas que puede asumir el diagrama de dispersión, podemos sacar diferentes inferencias. Podemos calcular un coeficiente de correlación para los datos dados. Es una medida cuantitativa de la asociación de las variables aleatorias. Su valor es siempre menor que 1 y puede ser positivo o negativo.
+      .col-12.col-md-3.mb-5.mb-lg-0(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-45.svg', alt='')  
+
+
+    .tarjeta--container.row.mb-5(data-aos="fade-down-right")
+      .col-md.tarjeta.color-acento-contenido.px-5.py-3
+        .row.justify-content-center.mb-4
+          .col-6
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-39.svg', alt='')
+        p En el caso de una correlación positiva, los puntos graficados se distribuyen desde la esquina inferior izquierda a la esquina superior derecha (en el patrón general de estar distribuidos uniformemente sobre una línea recta con una pendiente positiva), y en el caso de una correlación negativa, los puntos trazados se extienden sobre una línea recta de una pendiente negativa) desde la parte superior izquierda hacia la parte inferior derecha.
+      .col-md.tarjeta.tarjeta--azul.px-5.py-3
+        .row.justify-content-center.mb-4
+          .col-6
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-40.svg', alt='')
+        p Si los puntos están distribuidos aleatoriamente en el espacio, o distribuidos casi por igual en todos los lugares sin representar ningún patrón en particular, es el caso de una correlación muy pequeña, que tiende a 0.
+
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Regresión
+
+    .row.mb-5.justify-content-center.align-items-center
+      .col-12.col-md-3.mb-5.mb-lg-0(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-46.svg', alt='') 
+      .col-12.col-md-9.mb-5.mb-lg-0(data-aos="fade-left")
+        p Consiste en una técnica estadística para estimar las relaciones entre variables. Incluye muchas técnicas para modelar y analizar varias variables cuando el foco está en la relación entre una variable dependiente y una o más variables independientes. Más específicamente, el análisis de regresión ayuda a comprender cómo cambia el valor típico de la variable dependiente cuando se varía cualquiera de las variables independientes, mientras que las otras variables independientes se mantienen fijas. Más comúnmente, el análisis de regresión estima la expectativa condicional de la variable dependiente dadas las variables independientes, es decir, el valor promedio de la variable dependiente cuando las variables independientes son fijas. Con menos frecuencia, la atención se centra en un cuantil, u otro parámetro de ubicación de la distribución condicional de la variable dependiente dadas las variables independientes. 
+
+
+    .row.mb-5.justify-content-center.align-items-center
+      .col-12.mb-5.mb-lg-0(data-aos="fade-right")
+        .cajon.color-acento-contenido.p-4.mb-2
+          p.mb-0 En todos los casos, el objetivo de estimación es una función de las variables independientes, llamada función de regresión. En el análisis de regresión, también es interesante caracterizar la variación de la variable dependiente alrededor de la función de regresión, que puede describirse mediante una distribución de probabilidad. Una aplicación muy común de la regresión es ayudar a los administradores financieros y de inversiones a valorar los activos y comprender las relaciones entre las variables, como los precios de los productos básicos y las acciones de las empresas que comercian con esos productos básicos.
+          
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.col-lg-10(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-47.svg', alt='')  
+
+    p.mb-3(data-aos="fade-right") El #[i software] no es solo para buscar filtros de caras divertidas o aprender nuevos movimientos de baile. Puede ayudar a su equipo a aumentar su eficiencia y ser más productivo y capaz en su trabajo. Una solución de #[i software] personalizada puede ayudar a eliminar el cuello de botella del seguimiento de los recibos y gastos del personal, o puede facilitar que su equipo administre los contactos de marketing.
+    p.mb-5(data-aos="fade-right") Y el #[i software] personalizado también puede servir como una solución para sus clientes. Por ejemplo, una opción de chat en vivo en su sitio web proporciona un contacto inmediato para clientes o prospectos con una necesidad urgente o que están listos para realizar una compra. Un #[i software] personalizado también podría ayudar a sus clientes a rastrear a su representante de servicio en el camino a su hogar, o enviar una solicitud de soporte técnico.
+
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Rectas de regresión
+
+    p.mb-5(data-aos="fade-right") Están definidas de la siguiente manera:
+
+
+    .row.justify-content-center.align-items-center.mb-4
+      .col-12(data-aos="fade-down")
+        .tarjeta-avatar-b.mb-4
+          .color-primario.pasos-custom.grande.px-5
+            .pasos-a__circle
+              .h2.text-white A
+          .tarjeta.tarjeta--custom
+            .p-4
+              p.mb-0 Las rectas de regresión son líneas que se utiliza para describir el comportamiento de un conjunto de datos. En otras palabras, da la mejor tendencia de los datos proporcionados. Las rectas de regresión son útiles en los procedimientos de pronóstico. Su propósito es describir la interrelación de la variable dependiente (variable y) con una o muchas variables independientes (variable x).
+              figure
+                img(src='@/assets/curso/temas/tema1/tema1-48.svg', alt='') 
+      .col-12(data-aos="fade-down")
+        .tarjeta-avatar-b.mb-4
+          .color-primario.pasos-custom.px-5
+            .pasos-a__circle
+              .h2.text-white B
+          .tarjeta.tarjeta--custom
+            .p-4
+              p.mb-0 El uso de la ecuación obtenida de la recta de regresión actúa como un analista que puede pronosticar comportamientos futuros de las variables dependientes ingresando diferentes valores para las independientes. Los dos tipos básicos de regresión son la recta de regresión normal o simple y la recta de regresión múltiple, aunque existen métodos de regresión no lineal para datos y análisis más complicados. 
+      .col-12(data-aos="fade-down")
+        .tarjeta-avatar-b.mb-4
+          .color-primario.pasos-custom.px-5
+            .pasos-a__circle
+              .h2.text-white C
+          .tarjeta.tarjeta--custom
+            .p-4
+              p.mb-0 La recta de regresión simple usa una variable independiente para explicar o predecir el resultado de la variable dependiente Y, mientras que la recta de regresión múltiple usa dos o más variables independientes para predecir el resultado. 
+      .col-12(data-aos="fade-down")
+        .tarjeta-avatar-b.mb-4
+          .color-primario.pasos-custom.grande.px-5
+            .pasos-a__circle
+              .h2.text-white D
+          .tarjeta.tarjeta--custom
+            .p-4
+              p.mb-0 La forma general de cada tipo de regresión es: Fórmula de la recta de regresión simple: #[strong Y = a + bX + u]
+              p Fórmula de la recta de regresión múltiple: #[strong Y = a + b1X1 + b2 X2 + b3 X3 + … + bt Xt + u]
+
+              h6 Donde:
+              ul.lista-ul.mb-2
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | Y = la variable que está intentando predecir (variable dependiente).
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | X = la variable que está utilizando para predecir Y (variable independiente).
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | a = la intersección.
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | b = la pendiente.
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | u = el residual de regresión.
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-md-11.col-lg-10.mb-4.mb-md-0(data-aos="fade-left")
+        .tarjeta.color-primario.p-3
+          .row.justify-content-around.align-items-center
+            .col-3.col-sm-2.col-lg-1
+              img(src="@/assets/curso/temas/pdf.svg")
+            .col
+              .row.justify-content-between.align-items-center
+                .col.mb-3.mb-sm-0
+                  h4 Para profundizar aún más en este ítem, diríjase al: 
+                  p.text-small Anexo 1 - Distribuciones bidimensionales y rectas de regresión.
+                .col-sm-auto
+                  a.boton.color-acento-botones(:href="obtenerLink('/downloads/anexo_1_distribuciones_bidimensionales_y_rectas_de_regresion.pdf')" target="_blank")
+                    span Descargar
+                    i.fas.fa-file-download
 
 
 
-    
+
 
 
 
