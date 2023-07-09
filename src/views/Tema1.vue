@@ -1108,7 +1108,7 @@
             i.fas.fa-play(style="color:#25FFFF")
             | Puntuaciones Z y ubicación dentro de la distribución de medias muestrales
 
-    .row.mb-5.align-self-stretch
+    .row.mb-3.align-self-stretch
       .col-12.col-md-12.mb-5.mb-lg-0(data-aos="fade-left")
         ul.lista-ul.mb-2
           li
@@ -1124,8 +1124,248 @@
         h5 El valor numérico de la puntuación Z indica la distancia entre  y μ medida en términos del error estándar.
         
 
+    Separador
+    #t_1_5.titulo-segundo.color-secundario(data-aos="fade-right")
+      h2 1.5 Estimación y prueba de hipótesis
+
+    .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade-down-right")
+      .bloque-texto-g__img(
+        :style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-99.png')})`}"
+      )
+      .bloque-texto-g__texto.p-4
+        p.mb-0 Un área de preocupación en la estadística inferencial es la estimación del parámetro de población a partir de la estadística de la muestra; aquí es importante darse cuenta del orden. La estadística de muestra se calcula a partir de los datos de muestra y el parámetro de población se infiere (o estima) a partir de esta estadística de muestra:
+
+    p.mb-5(data-aos="fade-left") Otra área de la estadística inferencial es la determinación del tamaño de la muestra. Es decir, qué tamaño de muestra debe tomarse para hacer una estimación precisa. En estos casos, las estadísticas no se pueden utilizar, ya que aún no se ha tomado la muestra.
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        LineaTiempoD.color-primario
+          .row(numero="1" titulo="Estimaciones puntuales")
+            .col-12.mb-4.mb-md-0
+              p.text-small Hay dos tipos de estimaciones que encontraremos: estimaciones puntuales y estimaciones de intervalo. La estimación puntual es el mejor valor individual. Un buen estimador debe satisfacer tres condiciones:
+              ul.lista-ul.mb-2
+                li.mb-0
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | #[strong Insesgado:] el valor esperado del estimador debe ser igual a la media del parámetro.
+                li.mb-0
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | #[strong Consistente:] el valor del estimador se acerca al valor del parámetro a medida que aumenta el tamaño de la muestra.
+                li.mb-0
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | #[strong Relativamente eficiente:] el estimador tiene la varianza más pequeña de todos los estimadores que podrían usarse.
+          .row(numero="2" titulo="Intervalos de confianza")
+            .col-12.mb-4.mb-md-0
+              p.text-small La estimación puntual va a ser diferente del parámetro de población porque debido al error de muestreo, y no hay forma de saber quién se acerca al parámetro real. Por esta razón, a los estadísticos les gusta dar una estimación de intervalo que es un rango de valores utilizados para estimar el parámetro. Un intervalo de confianza es una estimación de intervalo con un nivel de confianza específico. Un nivel de confianza es la probabilidad de que la estimación del intervalo contenga el parámetro. El nivel de confianza es 1-alfa y esta se encuentra dentro del intervalo de confianza.
+          .row(numero="3" titulo="Error máximo de la estimación")
+            .col-12.mb-4.mb-md-0
+              p.text-small El error máximo de la estimación se indica con E y es la mitad del ancho del intervalo de confianza. El intervalo de confianza básico para una distribución simétrica se establece para que sea la estimación puntual menos el error máximo de la estimación es menor que el parámetro de población real que es menor que la estimación puntual más el error máximo de la estimación. Esta fórmula funcionará para medias y proporciones, porque usarán las distribuciones Z o T que son simétricas.
+          .row(numero="4" titulo="Prueba de hipótesis")
+            .col-12.mb-4.mb-md-0
+              p.text-small Cuando evalúas una hipótesis, debes tener en cuenta tanto la variabilidad de tu muestra como el tamaño de la muestra. La prueba de hipótesis se usa generalmente cuando se comparan dos o más grupos. Por ejemplo, puede implementar protocolos para realizar la intubación en pacientes pediátricos en el entorno prehospitalario. Para evaluar si estos protocolos tuvieron éxito en mejorar las tasas de intubación, podría medir la tasa de intubación a lo largo del tiempo en un grupo asignado aleatoriamente a la capacitación en los nuevos protocolos y compararla con la tasa de intubación a lo largo del tiempo en otro grupo de control que no recibió capacitación en los nuevos protocolos.
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-101.svg', alt='')
+              .cajon.color-acento-botones.p-4.mb-2
+                p.text-small.mb-0 Cuando evalúas una hipótesis, debes tener en cuenta tanto la variabilidad de tu muestra como el tamaño de la muestra.  Con base en esta información, le gustaría hacer una evaluación de si las diferencias que ve son significativas o si es probable que se deba a la casualidad. Esto se hace formalmente a través de un proceso llamado prueba de hipótesis.
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-102.svg', alt='')
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-100.svg', alt='')  
 
 
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Cinco pasos en la prueba de hipótesis:
+
+    .row.mb-5.align-self-stretch.justify-content-center
+      .col-sm-6.col-lg-2.col-md-4.mb-4.mb-lg-0
+        .tarjeta--boton.color-acento-contenido.text-white--hover.p-3(style="height:100%")
+          .row.justify-content-center.mb-3
+            .col-7
+              figure
+                img(src='@/assets/curso/temas/tema1/tema1-103.svg', alt='')
+          .text-small.text-center #[strong Especificar la hipótesis nula]
+
+      .col-sm-6.col-lg-2.col-md-4.mb-4.mb-lg-0
+        .tarjeta--boton.color-secundario.p-3(style="height:100%")
+          .row.justify-content-center.mb-3
+            .col-7
+              figure
+                img(src='@/assets/curso/temas/tema1/tema1-104.svg', alt='')
+          .text-small.text-center #[strong Especificar la hipótesis alternativa]
+
+      .col-sm-6.col-lg-2.col-md-4.mb-4.mb-lg-0
+        .tarjeta--boton.color-primario.p-3(style="height:100%")
+          .row.justify-content-center.mb-3
+            .col-7
+              figure
+                img(src='@/assets/curso/temas/tema1/tema1-105.svg', alt='')
+          .text-small.text-center #[strong Establecer el nivel de significación (α)]
+
+      .col-sm-6.col-lg-2.col-md-4.mb-4.mb-lg-0
+        .tarjeta--boton.color-acento-contenido.text-white--hover.p-3(style="height:100%")
+          .row.justify-content-center.mb-3
+            .col-7
+              figure
+                img(src='@/assets/curso/temas/tema1/tema1-106.svg', alt='')
+          .text-small.text-center #[strong Calcule la estadística de prueba y el valor P correspondiente]
+          
+      .col-sm-6.col-lg-2.col-md-4.mb-4.mb-lg-0
+        .tarjeta--boton.color-primario.p-3(style="height:100%")
+          .row.justify-content-center.mb-3
+            .col-7
+              figure
+                img(src='@/assets/curso/temas/tema1/tema1-107.svg', alt='')
+          .text-small.text-center #[strong Esbozando una conclusión]
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Para ampliar la información sobre estos importantes pasos en la estimación y la prueba de hipótesis, se invita a revisar: 
+    
+    
+    TabsA.color-acento-botones.mb-5
+      .tarjeta.tarjeta--azul.p-4(titulo="Especifique la hipótesis nula")
+        h4 Especifique la hipótesis nula 
+        p La hipótesis nula (H0) es una declaración de ningún efecto, relación o diferencia entre dos o más grupos o factores. En los estudios de investigación, un investigador suele estar interesado en refutar la hipótesis nula.
+        h5 Ejemplos
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-check(style="color:#7125C8")
+            | No hay diferencia en las tasas de intubación entre las edades de 0 a 5 años.
+          li.mb-0
+            i.fas.fa-check(style="color:#7125C8")
+            | Los grupos de intervención y control tienen la misma tasa de supervivencia (o la intervención no mejora la tasa de supervivencia).
+          li.mb-0
+            i.fas.fa-check(style="color:#7125C8")
+            | No existe asociación entre el tipo de lesión y si el paciente recibió o no una vía intravenosa en el entorno prehospitalario.
+      .tarjeta.tarjeta--azul.p-4(titulo="Especifique la hipótesis alternativa")
+        h4 Especifique la hipótesis alternativa 
+        p La hipótesis alternativa (HA) es la afirmación de que existe un efecto o diferencia. Esta suele ser la hipótesis que el investigador está interesado en probar. La hipótesis alternativa puede ser unilateral (solo proporciona una dirección, por ejemplo, inferior) o bilateral. A menudo, utilizamos pruebas de dos caras incluso cuando nuestra verdadera hipótesis es unilateral, porque requiere más evidencia en contra de la hipótesis nula para aceptar la hipótesis alternativa.
+        h5 Ejemplos
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-check(style="color:#7125C8")
+            | La tasa de éxito de la intubación difiere según la edad del paciente tratado (bilateral).
+          li.mb-0
+            i.fas.fa-check(style="color:#7125C8")
+            | El tiempo hasta la reanimación de un paro cardíaco es menor para el grupo de intervención que para el control (unilateral).
+          li.mb-0
+            i.fas.fa-check(style="color:#7125C8")
+            | Existe una asociación entre el tipo de lesión y si el paciente recibió o no una vía intravenosa en el entorno prehospitalario (bilateral).
+      .tarjeta.tarjeta--azul.p-4(titulo="Establecer el nivel de significancia (α)")
+        h4 Establecer el nivel de significancia (α)
+        p El nivel de significancia (denotado por la letra griega alfa α) generalmente se establece en 0,05. Esto significa que hay 5% de probabilidad de que acepte su hipótesis alternativa cuando su hipótesis nula sea realmente cierta. Cuanto menor sea el nivel de significancia, mayor será la carga de la prueba necesaria para rechazar la hipótesis nula o, en otras palabras, para respaldar la hipótesis alternativa.
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-108.svg', alt='')
+      .tarjeta.tarjeta--azul.p-4(titulo="Calcule la estadística de prueba y el valor P correspondiente")
+        h4 Calcule la estadística de prueba y el valor P correspondiente
+        p En otra sección presentamos algunas estadísticas de prueba básicas para evaluar una hipótesis. La prueba de hipótesis generalmente utiliza una estadística de prueba que compara grupos o examina asociaciones entre variables. Cuando se describe una sola muestra sin establecer relaciones entre variables, se suele utilizar un intervalo de confianza.
+        .cajon.color-acento-contenido.p-4.mb-2
+          p.mb-0 El valor p describe la probabilidad de obtener un estadístico de muestra tan o más extremo por casualidad solo si su hipótesis nula es cierta. Este valor p se determina en función del resultado de su estadística de prueba. Sus conclusiones sobre la hipótesis se basan en su valor p y su nivel de significancia.
+        h5 Ejemplos
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-check(style="color:#7125C8")
+            | #[strong Valor p = 0,01.] Esto sucederá 1 de cada 100 veces por pura casualidad si su hipótesis nula es cierta. No es probable que suceda estrictamente por casualidad.
+          li.mb-0
+            i.fas.fa-check(style="color:#7125C8")
+            | #[strong Valor p = 0,75.] Esto sucederá 75 de cada 100 veces por pura casualidad si su hipótesis nula es cierta. Es muy probable que ocurra estrictamente por casualidad.
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Precauciones sobre los valores p 
+      
+    p.mb-5(data-aos="fade-right") El tamaño de la muestra afecta directamente su valor p. Los tamaños de muestra grandes producen valores p pequeños incluso cuando las diferencias entre los grupos no son significativas. Siempre debe verificar la relevancia práctica de sus resultados. Por otro lado, un tamaño de muestra demasiado pequeño puede provocar que no se identifique una diferencia cuando realmente existe. 
+
+    .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade-down-right")
+      .bloque-texto-g__img(
+        :style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-109.png')})`}"
+      )
+      .bloque-texto-g__texto.p-4
+        p.mb-0 Se debe planificar el tamaño de la muestra con anticipación para tener  suficiente información de su muestra para mostrar una relación o diferencia significativa, si existe. Consulte el cálculo de un tamaño de muestra para obtener más información.
+
+
+    .tarjeta--container.row.mb-5(data-aos="fade-down-right")
+      .col-md.tarjeta.color-acento-contenido.px-5.py-3
+        .row.justify-content-center.mb-4
+          .col-6
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-110.svg', alt='')
+        h4 Ejemplo 1
+        p Las edades medias fueron significativamente diferentes entre los dos grupos (16,2 años frente a 16,7 años; p = 0,01; n = 1.000). ¿Es esta una diferencia importante? Probablemente no, pero el gran tamaño de la muestra ha dado como resultado un valor p pequeño.
+      .col-md.tarjeta.color-acento-botones.px-5.py-3
+        .row.justify-content-center.mb-4
+          .col-6
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-110.svg', alt='')
+        h4 Ejemplo 2
+        p Las edades medias no fueron significativamente diferentes entre los dos grupos (10,4 años frente a 16,7 años; p = 0,40, n = 10). ¿Es esta una diferencia importante? Podría ser, pero debido a que el tamaño de la muestra es pequeño, no se puede determinar con certeza si se trata de una verdadera diferencia o simplemente sucedió debido a la variabilidad natural en la edad dentro de estos dos grupos.
+      
+    p.mb-5(data-aos="fade-right")  Si realiza una gran cantidad de pruebas para evaluar una hipótesis (lo que se denomina prueba múltiple), debe controlar esto en su designación del nivel de significancia o en el cálculo del valor p. Por ejemplo, si tres resultados miden la efectividad de un fármaco u otra intervención, tendrá que ajustar estos tres análisis.
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Sacar una conclusión
+
+    .row.mb-3.align-self-stretch
+      .col-12.col-md-12.mb-5.mb-lg-0(data-aos="fade-left")
+        ul.lista-ul.mb-2.px-4
+          li
+            i.fas.fa-check(style="color:#AD84FF")
+            | Valor p < = nivel de significancia (a) = >, rechaza su hipótesis nula a favor de su hipótesis alternativa. El resultado es estadísticamente significativo.
+          li
+            i.fas.fa-check(style="color:#AD84FF")
+            | Valor p > nivel de significancia (a) = > no rechaza su hipótesis nula. El resultado no es estadísticamente significativo.
+
+    .bloque-texto-a.color-primario.p-4.p-md-5.mb-5(data-aos="fade-down-right") 
+      .row.m-0.align-items-center.justify-content-between
+        .col-lg-12
+          .bloque-texto-a__texto.p-4
+            p La prueba de hipótesis no está configurada para que pueda probar absolutamente una hipótesis nula. Por lo tanto, cuando no se encuentra evidencia en contra de la hipótesis nula, no se puede rechazar la hipótesis nula. Cuando se encuentra evidencia suficientemente fuerte en contra de la hipótesis nula, se rechaza la hipótesis nula. Sus conclusiones también se traducen en una declaración sobre su hipótesis alternativa. Cuando presente los resultados de una prueba de hipótesis, incluya también las estadísticas descriptivas en sus conclusiones. Informe valores p exactos en lugar de un rango determinado. Por ejemplo, “La tasa de intubación difirió significativamente según la edad del paciente y los pacientes más jóvenes tienen una tasa más baja de intubación exitosa (p = 0,02)”. Aquí hay dos ejemplos más con la conclusión expresada de varias formas diferentes.
+
+
+    .row.mb-5.align-self-stretch.justify-content-center
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        .cajon.tarjeta--azul.p-4
+          h5 Ejemplo
+          p.mb-0 H0: no hay diferencia en la supervivencia entre el grupo de intervención y el de control.
+          p.mb-0 HA: existe una diferencia en la supervivencia entre el grupo de intervención y el de control. 
+          p.mb-0 α = 0,05: aumento del 20% en la supervivencia para el grupo de intervención; valor p = 0,002.
+        .cajon.tarjeta--gris.p-4
+          h5 Conclusión
+          p.mb-0 Rechace la hipótesis nula a favor de la hipótesis alternativa.
+          p.mb-0 La diferencia en la supervivencia entre el grupo de intervención y el de control fue estadísticamente significativa. Hubo un aumento del 20% en la supervivencia para el grupo de intervención en comparación con el control (p = 0,001).
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-111.svg', alt='')  
+
+    .row.mb-5.align-self-stretch.justify-content-center
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-112.svg', alt='')  
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        .cajon.tarjeta--azul.p-4
+          h5 Ejemplo
+          p.mb-0 H0: no hay diferencia en la supervivencia entre el grupo de intervención y el de control.
+          p.mb-0 HA: existe una diferencia en la supervivencia entre el grupo de intervención y el de control.
+          p.mb-0 α = 0,05: aumento del 5% en la supervivencia entre el grupo de intervención y el de control; valor p = 0,20.
+        .cajon.tarjeta--gris.p-4
+          h5 Conclusión
+          p.mb-0 No rechace la hipótesis nula.
+          p.mb-0 La diferencia en la supervivencia entre el grupo de intervención y el de control no fue estadísticamente significativa.
+          p.mb-0 No hubo un aumento significativo en la supervivencia para el grupo de intervención en comparación con el control (p = 0,20).
 
 
 
