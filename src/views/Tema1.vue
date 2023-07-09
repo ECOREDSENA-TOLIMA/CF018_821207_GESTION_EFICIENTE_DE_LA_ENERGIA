@@ -145,7 +145,7 @@
               p.text-small Bueno, a diferencia de la media, que era un cálculo matemático que usaba todas las observaciones del conjunto de datos, la mediana ignora lo que dicen los números y solo usa la observación del medio. ¿Cuál es la correcta? Ambos lo son. Ninguno es necesariamente mejor que el otro. Entonces, ¿por qué usar una mediana? Bueno, hay ciertos tipos de datos en los que le preocupará el sesgo. El sesgo es cuando la media sube o baja por encima de la mediana debido a valores muy altos o muy bajos.
               div.formulas.mb-3
                 img(src='@/assets/curso/temas/tema1/tema1-20.svg', alt='')
-      .col-12.col-md-4.mb-5.mb-lg-0.d-block.d-md-none(data-aos="fade-right")
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
         figure
           img(src='@/assets/curso/temas/tema1/tema1-14.svg', alt='')  
 
@@ -212,7 +212,6 @@
       .col-12.col-lg-10(data-aos="fade-right")
         .titulo-sexto.color-acento-botones
           p.titulo.pb-0.mb-0 #[b Figura 1.] #[i Diferencias entre mediana, media y moda] 
-        div.d-none.d-sm-none.d-md-block
           figure
             img(src='@/assets/curso/temas/tema1/tema1-27.svg', alt='')  
             figcaption Nota. Tomada de https://www.nobbot.com/educacion/no-te-quedes-en-la-media-y-aprende-a-calcular-la-mediana-asi-se-hace/
@@ -251,6 +250,35 @@
             td 2
 
     hr
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Varianza y desviación típica o estándar
+
+    .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade-down-right")
+      .bloque-texto-g__img(
+        :style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-28.png')})`}"
+      )
+      .bloque-texto-g__texto.p-4
+        p.mb-0 La varianza es la expectativa de la desviación al cuadrado de una variable aleatoria de su media poblacional o muestral. La varianza es una medida de dispersión, lo que significa que es una medida de qué tan lejos se separa un conjunto de números de su valor promedio y se define de manera detallada así:
+
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        LineaTiempoD.color-primario
+          .row(numero="1" titulo="Varianza y desviación típica o estándar")
+            .col-12.mb-4.mb-md-0
+              p.text-small La varianza es la expectativa de la desviación al cuadrado de una variable aleatoria de su media poblacional o muestral. La varianza es una medida de dispersión, lo que significa que es una medida de qué tan lejos se separa un conjunto de números de su valor promedio. La varianza tiene un papel central en la estadística, donde algunas ideas que la usan incluyen estadística descriptiva, inferencia estadística, prueba de hipótesis y muestreo de Monte Carlo. 
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-30.svg', alt='')
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right") 
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-29.png', alt='')  
+
+
 
     
 
