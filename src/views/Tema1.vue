@@ -1664,6 +1664,28 @@
           img(src='@/assets/curso/temas/tema1/tema1-147.svg', alt='')
 
 
+    Separador
+    #t_1_9.titulo-segundo.color-secundario(data-aos="fade-right")
+      h2 1.9 Combinatoria: variaciones, permutaciones y combinaciones
+
+    p.mb-3(data-aos="fade-right") La combinatoria se ocupa de conjuntos finitos y sus objetos básicos son permutaciones, variaciones y combinaciones (y se refieren tanto a las operaciones como a los resultados de estas operaciones). Dado que siempre es posible identificar m y n elementos conjuntos con los conjuntos {1, 2, …, m} y {1, 2, …, n}, es suficiente considerar estos conjuntos, y esta situación es una a uno estándar. Recordamos estas tres nociones (en sus dos apariencias: cuándo se permiten las repeticiones y cuándo no). 
+    p.mb-5(data-aos="fade-right") Esto se hace comenzando con variaciones sin repeticiones (validando esta decisión por una relación directa con la cardinalidad de todos los mapas finitos), aunque se podría comenzar con combinaciones o con permutaciones. Al cumplir con la permutación, hay que prestar una especial atención a las operaciones con factorial.
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-md-11.col-lg-10.mb-4.mb-md-0(data-aos="fade-left")
+        .tarjeta.color-primario.p-3
+          .row.justify-content-around.align-items-center
+            .col-3.col-sm-2.col-lg-1
+              img(src="@/assets/curso/temas/pdf.svg")
+            .col
+              .row.justify-content-between.align-items-center
+                .col.mb-3.mb-sm-0
+                  p.text-small #[sttrong En el Anexo 5 - Combinatoria - Variaciones, permutaciones y combinaciones,] se encuentran las respectivas fórmulas para un caso determinado y su respectivo ejemplo. 
+                .col-sm-auto
+                  a.boton.color-acento-botones(:href="obtenerLink('/downloads/anexo_5_combinatoria_variaciones_permutaciones_y_combinaciones.pdf')" target="_blank")
+                    span Descargar
+                    i.fas.fa-file-download
+    
 
 
 
