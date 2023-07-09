@@ -645,13 +645,245 @@
                     i.fas.fa-file-download
 
 
+    Separador
+    #t_1_3.titulo-segundo.color-acento-botones(data-aos="fade-right")
+      h2 1.3 Distribuciones discretas, distribución binomial, distribuciones continuas, distribución normal
+
+    p.mb-5(data-aos="fade-left") A continuación, se exponen los diferentes tipos de distribución y cómo aplicarlos en la vida profesional. 
 
 
+    .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade-down-right")
+      .bloque-texto-g__img(
+        :style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-49.png')})`}"
+      )
+      .bloque-texto-g__texto.p-4
+        p.mb-0 En estadística, las distribuciones parecen infinitas con docenas de distribuciones compitiendo por su atención y con poca o ninguna base intuitiva para diferenciarlas. Las descripciones tienden a ser abstractas y enfatizan propiedades estadísticas como los momentos, funciones características y distribuciones acumulativas.
 
 
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Distribuciones discretas
+
+    p.mb-5(data-aos="fade-left") Una distribución discreta es una distribución de probabilidad que representa la ocurrencia de resultados discretos (contables individualmente), como 1, 2, 3 … o 0 contra 1. 
+
+    .row.mb-5.justify-content-center.align-items-center
+      .col-12.mb-5.mb-lg-0(data-aos="fade-right")
+        .cajon.color-acento-contenido.p-4.mb-2
+          p.mb-0 Por ejemplo, es una distribución discreta que evalúa la probabilidad de que ocurra un resultado “sí” o “no” en un número determinado de intentos, dada la probabilidad del evento en cada intento, como lanzar una moneda cien veces y teniendo el resultado “cabezas”. 
 
 
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.col-md-6.mb-3(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-50.svg', alt='') 
+      .col-12.col-md-6.mb-3(data-aos="fade-left")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-51.svg', alt='') 
+      .col-12.col-md-6.mb-3(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-52.svg', alt='') 
+      .col-12.col-md-6.mb-3(data-aos="fade-left")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-53.svg', alt='') 
 
+    p.mb-5(data-aos="fade-right") Las distribuciones estadísticas pueden ser discretas o continuas. Una distribución continua se construye a partir de resultados que caen en un continuo, como todos los números mayores que 0 (que incluirían números cuyos decimales continúan indefinidamente, como pi = 3,14159265 …). En general, los conceptos de distribuciones de probabilidad discretas y continuas y las variables aleatorias que describen son la base de la teoría de la probabilidad y el análisis estadístico.
+
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#7125C8")
+            | Características principales
+
+    .row.mb-5
+      .col-12.col-md-4.mb-4(data-aos="fade-down")
+        .tarjeta.tarjeta-slide.arriba.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+          .indicador--hover(v-if="indicadorTarjetaSlide")
+          .tarjeta-slide__contenedor
+            .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-54.svg')})`}")
+            .tarjeta-slide__contenido.p-4.p-xl-5
+              p Una distribución de probabilidad discreta cuenta las ocurrencias que tienen resultados contables o finitos.
+      .col-12.col-md-4.mb-4(data-aos="fade-down")
+        .tarjeta.tarjeta-slide.abajo.color-primario(@mouseover="indicadorTarjetaSlide = false")
+          .tarjeta-slide__contenedor
+            .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-55.svg')})`}")
+            .tarjeta-slide__contenido.p-4.p-xl-5
+              p Esto contrasta con una distribución continua, donde los resultados pueden caer en cualquier parte de un continuo.
+      .col-12.col-md-4.mb-4(data-aos="fade-down")
+        .tarjeta.tarjeta-slide.arriba.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+          .indicador--hover(v-if="indicadorTarjetaSlide")
+          .tarjeta-slide__contenedor
+            .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-56.svg')})`}")
+            .tarjeta-slide__contenido.p-4.p-xl-5
+              p Los ejemplos comunes de distribución discreta incluyen las distribuciones binomiales, binomial negativa, beta-binomial, Poisson, hipergeométrica y Bernoulli.
+      .col-12.col-md-4.mb-4(data-aos="fade-down")
+        .tarjeta.tarjeta-slide.abajo.color-primario(@mouseover="indicadorTarjetaSlide = false")
+          .tarjeta-slide__contenedor
+            .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-57.svg')})`}")
+            .tarjeta-slide__contenido.p-4.p-xl-5
+              p Estas distribuciones a menudo involucran análisis estadísticos de “conteos” o “cuántas veces” ocurre un evento.
+      .col-12.col-md-4.mb-4(data-aos="fade-down")
+        .tarjeta.tarjeta-slide.abajo.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+          .tarjeta-slide__contenedor
+            .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-58.svg')})`}")
+            .tarjeta-slide__contenido.p-4.p-xl-5
+              p En finanzas, las distribuciones discretas se utilizan en la fijación de precios de opciones y en la previsión de shocks o recesiones del mercado.
+
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Distribución binomial
+
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.col-md-11.col-lg-10(data-aos="fade-right")
+        p Suponer que X1, X2, …, Xn son variables aleatorias de Bernoulli independientes e idénticamente distribuidas (iid), cada una con la distribución. 
+      .col-12.col-md-11.col-lg-10(data-aos="fade-right")
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-59.svg', alt='')
+      .col-12.col-md-11.col-lg-10(data-aos="fade-right")
+        p Entonces se dice que X tiene una distribución binomial con parámetros n y p:
+      .col-12.col-md-11.col-lg-10(data-aos="fade-right")
+        .row 
+          .col-12.col-md-7
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-61.svg', alt='')
+            p Suponga que un experimento e x consiste en n ensayos repetidos tipo Bernoulli, cada ensayo resulta en un “éxito” con probabilidad π y un “fracaso” con probabilidad 1 – π. Por ejemplo, lanza una moneda 100 veces n = 100. Cuente el número de veces que observa cabezas, por ejemplo, X = # de cabezas. Si todos los ensayos son independientes, es decir, si la probabilidad de éxito en cualquier ensayo no se ve afectada por el resultado de cualquier otro ensayo, entonces el número total de éxitos en el experimento tendrá una distribución binomial, por ejemplo, dos lanzamientos de moneda no lo hacen afectarse unos a otros. La distribución binomial se puede escribir como:
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-62.svg', alt='')
+            p La distribución de Bernoulli es un caso especial del binomio con n = 1. Es decir,
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-63.svg', alt='')
+          .col-12.col-md-5.d-none.d-sm-none.d-md-block
+            figure
+              img(src='@/assets/curso/temas/tema1/tema1-60.svg', alt='')
+      .col-12-col-md-11.col-lg-10(data-aos="fade-right")
+        p Ello significa que X tiene una distribución de Bernoulli con probabilidad de éxito π. Se puede demostrar algebraicamente que si se cumple la ecuación anterior entonces:
+      .col-12.col-md-11.col-lg-10(data-aos="fade-right")
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-64.svg', alt='')
+      .col-12.col-md-11.col-lg-10(data-aos="fade-right")
+        p Una forma más sencilla de llegar a estos resultados es tener en cuenta que dónde son variables aleatorias de Bernoulli. Entonces, por las propiedades aditivas de media y varianza, X= X1, X2, …, Xn donde X1, X2, …, Xn son variables aleatorias de Bernoulli. Entonces, por las propiedades aditivas de media y varianza,
+      .col-12.col-md-11.col-lg-10(data-aos="fade-right")
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-65.svg', alt='')
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-66.svg', alt='')
+
+    .row.mb-5(data-aos="fade-down-right")
+      .col-12.col-md-5.col-lg-4.d-none.d-sm-none.d-md-block
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-67.svg', alt='')
+      .col-12.col-md-7.col-lg-8
+        p Tenga en cuenta que X no tendrá una distribución binomial si la probabilidad de éxito π no es constante de un ensayo a otro, o si los ensayos no son completamente independientes (es decir, un éxito o fracaso en un ensayo altera la probabilidad de éxito en otro ensayo).
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-68.svg', alt='')
+        p A medida que n aumenta, para fijo π, la distribución binomial se aproxima a la distribución normal:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-69.svg', alt='')
+
+    p.mb-5(data-aos="fade-down-right") Por ejemplo, si se toman muestras sin reemplazo de una población finita, entonces la distribución hipergeométrica es apropiada. 
+
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-md-11.col-lg-10.mb-4.mb-md-0(data-aos="fade-left")
+        .tarjeta.color-primario.p-3
+          .row.justify-content-around.align-items-center
+            .col-3.col-sm-2.col-lg-1
+              img(src="@/assets/curso/temas/pdf.svg")
+            .col
+              .row.justify-content-between.align-items-center
+                .col.mb-3.mb-sm-0
+                  h4 Para profundizar aún más en este ítem, diríjase al: 
+                  p.text-small Anexo 2 - Modelos de probabilidad discretos.
+                .col-sm-auto
+                  a.boton.color-acento-botones(:href="obtenerLink('/downloads/anexo_2_modelos_de_probabilidad_discretos.pdf')" target="_blank")
+                    span Descargar
+                    i.fas.fa-file-download
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Distribuciones continuas
+
+    p.mb-5(data-aos="fade-down-right") Estas pueden tomar cualquier valor dentro de un rango definido. Este rango puede ser infinito (por ejemplo, para la distribución normal) en cuyo caso se habla de una distribución limitada o si es finita (por ejemplo, la distribución uniforme) es una distribución delimitada.
+
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.col-lg-10(data-aos="fade-right")
+        .titulo-sexto.color-acento-botones
+          p.titulo.pb-0.mb-0 #[b Figura 3.] #[i Distribuciones continuas] 
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-70.svg', alt='')  
+          figcaption Nota. Tomada de: https://slideplayer.es/amp/1025784/
+
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-md-11.col-lg-10.mb-4.mb-md-0(data-aos="fade-left")
+        .tarjeta.color-primario.p-3
+          .row.justify-content-around.align-items-center
+            .col-3.col-sm-2.col-lg-1
+              img(src="@/assets/curso/temas/pdf.svg")
+            .col
+              .row.justify-content-between.align-items-center
+                .col.mb-3.mb-sm-0
+                  h4 En el Anexo 3 - Distribuciones continuas
+                  p.text-small Encontrarán una tabla que ofrece una descripción general de varias distribuciones continuas que se usan comúnmente en el modelado de análisis de riesgos, de modo que pueda enfocarse más fácilmente en cuáles podrían ser las más apropiadas para sus necesidades de modelado. Siga los enlaces para obtener una explicación detallada de cada uno. Se ha utilizado el nombre más común para cada distribución.
+                .col-sm-auto
+                  a.boton.color-acento-botones(:href="obtenerLink('/downloads/anexo_3_distribuciones_continuas.pdf')" target="_blank")
+                    span Descargar
+                    i.fas.fa-file-download
+
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.col-md-5.col-lg-3.d-none.d-sm-none.d-md-block(data-aos="fade-down-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-71.svg', alt='')
+      .col-12.col-md-7.col-lg-8(data-aos="fade-down-right")
+        P Una distribución continua se utiliza para representar una variable que puede tomar cualquier valor dentro de un rango definido (dominio). Por ejemplo, la estatura de un inglés adulto escogido al azar tendrá una distribución continua, porque la estatura de una persona es esencialmente infinitamente divisible. Se podría medir su estatura en centímetro, milímetro, décimo de milímetro, etc.; la escala se puede dividir repetidamente generando cada vez más valores posibles.
+
+      .col-lg-11.col-12.mt-3(data-aos="fade-down-right")
+        .cajon.color-acento-contenido.p-4.mb-2
+          p.mb-0 Propiedades como el tiempo, la masa y la distancia, que son infinitamente divisibles, se modelan utilizando distribuciones continuas. En la práctica, también se usan distribuciones continuas para modelar variables que son, en verdad, discretas, pero donde la brecha entre los valores permitidos es insignificante: por ejemplo, el costo del proyecto (que es discreto con pasos de un centavo, un centavo, etc.), tipo de cambio (que solo se cotiza a unas pocas cifras significativas), número de empleados en una gran organización, etc.
+        
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Distribución normal
+
+    p.mb-5(data-aos="fade-down-right") En la teoría de la probabilidad, la distribución normal (o gaussiana o Gauss o Laplace-Gauss) es un tipo de distribución de probabilidad continua para un valor real- variable aleatoria. La forma general de su función de densidad de probabilidad es:
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12(data-aos="fade-right")
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-72.svg', alt='')
+
+    p.mb-5(data-aos="fade-down-right") El parámetro μ es la media o expectativa de la distribución (y también su mediana y moda), mientras que el parámetro es su desviación estándar σ. La varianza de la distribución es σ2. Se dice que una variable aleatoria con una distribución gaussiana tiene una distribución normal y se denomina desviación normal.
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.col-lg-10(data-aos="fade-right")
+        .titulo-sexto.color-acento-botones
+          p.titulo.pb-0.mb-0 #[b Figura 4.] #[i Distribución normal] 
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-73.svg', alt='')  
+          figcaption Nota. Tomada de http://matepedia-estadistica.blogspot.com/2016/09/caracteristicas-de-una-distribucion.html
+
+    .bloque-texto-a.color-primario.p-4.p-md-5.mb-5(data-aos="fade-down-right") 
+      .row.m-0.align-items-center.justify-content-between
+        .col-lg-12
+          .bloque-texto-a__texto.p-4
+            p Cualquier combinación lineal de una colección fija de desviaciones normales es una desviación normal. Muchos resultados y métodos, como la propagación de la incertidumbre y el ajuste de parámetros por mínimos cuadrados, pueden derivarse analíticamente de forma explícita cuando las variables relevantes se distribuyen normalmente. Una distribución normal a veces se denomina informalmente curva de campana. Sin embargo, muchas otras distribuciones tienen forma de campana (como las distribuciones de Cauchy, de Student y logística).
 
 
 
@@ -663,6 +895,7 @@ export default {
   components: {},
   data: () => ({
     // variables de vue
+    indicadorTarjetaSlide: true,
   }),
   mounted() {
     this.$nextTick(() => {
