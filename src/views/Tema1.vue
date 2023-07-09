@@ -1368,8 +1368,53 @@
           p.mb-0 No hubo un aumento significativo en la supervivencia para el grupo de intervención en comparación con el control (p = 0,20).
 
 
+    Separador
+    #t_1_6.titulo-segundo.color-secundario(data-aos="fade-right")
+      h2 1.6 Formulario de muestreo y estimación
 
+    .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade-down-right")
+      .bloque-texto-g__img(
+        :style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-113.png')})`}"
+      )
+      .bloque-texto-g__texto.p-4
+        p.mb-0 Las fórmulas que se usan para calcular la media muestral y todas las demás estadísticas muestrales son ejemplos de fórmulas de estimación o estimadores. El valor particular que calculamos a partir de observaciones de muestra utilizando un estimador se denomina estimación. Por ejemplo, el valor calculado de la media muestral en una muestra determinada se denomina estimación puntual de la media poblacional. Las tres propiedades deseables de un estimador son:
 
+    .row.mb-5.align-self-stretch.justify-content-center
+      .col-md-6.col-lg.tarjeta--tabla.p-4
+        .row.justify-content-center.mb-3
+          .col-4
+            img(src='@/assets/curso/temas/tema1/tema1-114.svg' alt='AvatarTop')
+        h2.text-center Insesgado
+        p.text-center Tu valor esperado es igual al parámetro que se está estimando.
+
+      .col-md-6.col-lg.tarjeta--tabla.p-4
+        .row.justify-content-center.mb-3
+          .col-4
+            img(src='@/assets/curso/temas/tema1/tema1-115.svg' alt='AvatarTop')
+        h2.text-center Eficiencia
+        p.text-center Tiene la varianza más baja en comparación con otros estimadores insesgados del mismo parámetro.
+
+      .col-md-6.col-lg.tarjeta--tabla.p-4
+        .row.justify-content-center.mb-3
+          .col-4
+            img(src='@/assets/curso/temas/tema1/tema1-116.svg' alt='AvatarTop')
+        h2.text-center Coherencia
+        p.text-center A medida que aumenta el tamaño de la muestra, el error muestral disminuye y las estimaciones se acercan al valor real.
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-md-11.col-lg-10.mb-4.mb-md-0(data-aos="fade-left")
+        .tarjeta.color-primario.p-3
+          .row.justify-content-around.align-items-center
+            .col-3.col-sm-2.col-lg-1
+              img(src="@/assets/curso/temas/pdf.svg")
+            .col
+              .row.justify-content-between.align-items-center
+                .col.mb-3.mb-sm-0
+                  p.text-small #[strong En el Anexo 4 - Formulario de muestreo,] se puede encontrar una clasificación por tablas de fórmulas más utilizadas y necesarias para llevar a cabo todo lo relacionado a procesos de muestreo de datos.
+                .col-sm-auto
+                  a.boton.color-acento-botones(:href="obtenerLink('/downloads/anexo_4_formulario_de_muestreo.pdf')" target="_blank")
+                    span Descargar
+                    i.fas.fa-file-download
 
 
 
