@@ -1,5 +1,5 @@
 <template lang="pug">
-.curso-main-container.pb-3
+.curso-main-container.pb-3.tema1
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
     .titulo-principal.color-acento-botones
@@ -274,9 +274,173 @@
               p.text-small La varianza es la expectativa de la desviación al cuadrado de una variable aleatoria de su media poblacional o muestral. La varianza es una medida de dispersión, lo que significa que es una medida de qué tan lejos se separa un conjunto de números de su valor promedio. La varianza tiene un papel central en la estadística, donde algunas ideas que la usan incluyen estadística descriptiva, inferencia estadística, prueba de hipótesis y muestreo de Monte Carlo. 
               div.formulas.mb-3
                 img(src='@/assets/curso/temas/tema1/tema1-30.svg', alt='')
+          .row(numero="2" titulo="La varianza…")
+            .col-12.mb-4.mb-md-0
+              p.text-small Es una herramienta importante en las ciencias, donde el análisis estadístico de datos es común. La varianza es el cuadrado de la desviación estándar, el segundo momento central de una distribución y la covarianza de la variable aleatoria consigo misma, y a menudo se representa por #[strong #[em σ2, s2, Var(x) o V(x)].]
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-31.svg', alt='')
+          .row(numero="3" titulo="Una ventaja de la varianza como medida de dispersión es…")
+            .col-12.mb-4.mb-md-0
+              p.text-small Que es más susceptible de manipulación algebraica que otras medidas de dispersión, como la desviación absoluta esperada; por ejemplo, la varianza de una suma de variables aleatorias no correlacionadas es igual a la suma de sus varianzas. Una desventaja de la varianza para aplicaciones prácticas es que, a diferencia de la desviación estándar, sus unidades difieren de la variable aleatoria, por lo que la desviación estándar se informa más comúnmente como una medida de dispersión una vez finalizado el cálculo.
+              h6.text-center Medidas de dispersión
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-32.svg', alt='')
+          .row(numero="4" titulo="La desviación estándar en las estadísticas ")
+            .col-12.mb-4.mb-md-0
+              p.text-small Está típicamente denotada por σ, es una medida de variación o dispersión (se refiere al grado de estiramiento o compresión de una distribución) entre valores en un conjunto de datos. Cuanto menor es la desviación estándar, más cerca tienden a estar los puntos de datos de la media (o valor esperado), μ. Por el contrario, una desviación estándar más alta indica una gama más amplia de valores. De manera similar a otros conceptos matemáticos y estadísticos, existen muchas situaciones diferentes en las que se puede usar la desviación estándar y, por lo tanto, muchas ecuaciones diferentes. 
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-33.svg', alt='')
+              h6.text-center Además de expresar la variabilidad de la población
+              p.text-small La desviación estándar también se usa a menudo para medir resultados estadísticos como el margen de error. Cuando se usa de esta manera, la desviación estándar a menudo se denomina error estándar de la media o error estándar de la estimación con respecto a una media.  
+          .row(numero="5" titulo="Desviación estándar de población ")
+            .col-12.mb-4.mb-md-0
+              p.text-small La desviación estándar de la población, la definición estándar de σ se usa cuando se puede medir una población completa y es la raíz cuadrada de la varianza de un conjunto de datos dado.
+              p.text-small #[strong En los casos en que se pueda muestrear a cada miembro de una población], se puede utilizar la siguiente ecuación para encontrar la desviación estándar de toda la población:
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-34.svg', alt='')
+              h6 Donde:
+              ul.lista-ul.mb-2
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | #[strong xi] es un valor individual
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | #[strong μ] es el valor medio / esperado
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | #[strong N] es el número total de valores
+              p.text-small #[strong Para aquellos] que no están familiarizados con la notación de suma, la ecuación anterior puede parecer desalentadora, pero cuando se aborda a través de sus componentes individuales, esta suma no es particularmente complicada. 
+              h6 Para entender más…
+              p.text-small El i = 1 en la suma indica el índice inicial, es decir, para el conjunto de datos 1, 3, 4, 7, 8, i = 1 sería 1, i = 2 sería 3, y así sucesivamente. Por lo tanto, la notación de suma simplemente significa realizar la operación de (xi – μ)2 en cada valor a través de N, que en este caso es 5 ya que hay 5 valores en este conjunto de datos.
+              h6 Ejemplo:
+              ul.lista-ul.mb-2
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | #[strong μ] = (1 + 3 + 4 + 7 + 8) / 5 = 4,6.  
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | #[strong σ] = √ [(1 - 4,6)2 + (3 - 4,6)2 + … + (8 - 4,6)2] / 5.  
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | #[strong σ] = √ (12,96 + 2,56 + 0,36 + 5,76 + 11,56) / 5 = 2,577.
+          .row(numero="6" titulo="Desviación estándar de la muestra")
+            .col-12.mb-4.mb-md-0
+              p.text-small En muchos casos, no es posible muestrear a todos los miembros dentro de una población, lo que requiere que se modifique la ecuación anterior para que la desviación estándar se pueda medir a través de una muestra aleatoria de la población que se está estudiando. Un estimador común para σ es la desviación estándar de la muestra, normalmente denotada por s. Vale la pena señalar que existen muchas ecuaciones diferentes para calcular la desviación estándar de la muestra, ya que, a diferencia de la media de la muestra, la desviación estándar de la muestra no tiene un estimador único que sea insesgado, eficiente y con una probabilidad máxima.
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-35.svg', alt='')
+              .cajon.color-acento-botones.p-4.mb-4
+                p.text-small #[strong La ecuación proporcionada a continuación es] la “desviación estándar de la muestra corregida”. Es una versión corregida de la ecuación obtenida al modificar la ecuación de desviación estándar de la población utilizando el tamaño de la muestra como el tamaño de la población, lo que elimina parte del sesgo de la ecuación. Sin embargo, la estimación imparcial de la desviación estándar es muy complicada y varía según la distribución.
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-36.svg', alt='')
+              p.text-small #[strong Como tal] la “desviación estándar de la muestra corregida” es el estimador más comúnmente utilizado para la desviación estándar de la población, y generalmente se la denomina simplemente “desviación estándar de la muestra”. Es una estimación mucho mejor que su versión sin corregir, pero aún tiene un sesgo significativo para tamaños de muestra pequeños (N <10).
+              h6 Donde:
+              ul.lista-ul.mb-2
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | #[strong xi] es un valor de la muestra
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | #[strong x̄] es la media de la muestra
+                li.mb-0.text-small
+                  i.lista-ul__vineta(style="color:#AD84FF")
+                  | #[strong N] es el tamaño de la muestra
       .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right") 
         figure
           img(src='@/assets/curso/temas/tema1/tema1-29.png', alt='')  
+
+    .row.justify-content-center.align-items-center.mb-4
+      .col-12(data-aos="fade-down-right")
+        .cajon.color-acento-botones.p-4.mb-4
+          p La desviación estándar se usa ampliamente en entornos experimentales e industriales para probar modelos con datos del mundo real; un ejemplo de esto es el control de calidad de algunos productos. A continuación, se informa acerca de sus usos:
+
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Aplicaciones de la desviación estándar 
+
+    .row.mb-5.justify-content-center.align-items-center
+      .col-12.col-md-4.mb-5.mb-lg-0(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-37.svg', alt='')  
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        p La desviación estándar se usa ampliamente en entornos experimentales e industriales para probar modelos con datos del mundo real. Un ejemplo de esto en aplicaciones industriales es el control de calidad de algunos productos. La desviación estándar se puede utilizar para calcular un valor mínimo y máximo dentro del cual algún aspecto del producto debería caer en un alto porcentaje del tiempo. En los casos en que los valores estén fuera del rango calculado, puede ser necesario realizar cambios en el proceso de producción para garantizar el control de calidad.
+        .cajon.color-acento-botones.p-4.mb-2
+          p.mb-0 La desviación estándar también se usa en el clima para determinar las diferencias en el clima regional. Imagínese dos ciudades, una en la costa y otra tierra adentro, que tienen la misma temperatura media de 75 ° F. Si bien esto puede generar la creencia de que las temperaturas de estas dos ciudades son prácticamente las mismas, la realidad podría enmascararse si solo se aborda la media y se ignora la desviación estándar. 
+    
+
+    p.mb-3(data-aos="fade-right") Las ciudades costeras tienden a tener temperaturas mucho más estables debido a la regulación de grandes masas de agua, ya que el agua tiene una mayor capacidad calorífica que la tierra; esencialmente, esto hace que el agua sea mucho menos susceptible a los cambios de temperatura, y las áreas costeras permanecen más cálidas en invierno y más frescas en verano debido a la cantidad de energía requerida para cambiar la temperatura del agua. 
+    p.mb-5(data-aos="fade-right") Otra área en la que se usa ampliamente la desviación estándar es la de las finanzas, donde a menudo se usa para medir el riesgo asociado en las fluctuaciones de precios de algún activo o cartera de activos.
+
+    .row.justify-content-center.align-items-center.mb-4
+      .col-md-11.col-12(data-aos="fade-down")
+        .tarjeta-avatar-b.mb-4
+          .color-secundario.pasos-custom.px-5
+            .pasos-a__circle
+              .h2.text-white 1
+          .tarjeta.tarjeta--custom
+            .p-4
+              p.mb-0 El uso de la desviación estándar en estos casos proporciona una estimación de la incertidumbre de los rendimientos futuros de una inversión determinada.
+      .col-md-11.col-12(data-aos="fade-down")
+        .tarjeta-avatar-b.mb-4
+          .color-secundario.pasos-custom.px-5
+            .pasos-a__circle
+              .h2.text-white 2
+          .tarjeta.tarjeta--custom
+            .p-4
+              p.mb-0 Por ejemplo, al comparar la acción A que tiene un rendimiento promedio del 7% con una desviación estándar del 10% contra la acción B, que tiene el mismo rendimiento promedio pero una desviación estándar del 50%, la primera acción sería claramente la opción más segura. dado que la desviación estándar de la acción B es significativamente mayor, para el mismo rendimiento exacto.
+      .col-md-11.col-12(data-aos="fade-down")
+        .tarjeta-avatar-b.mb-4
+          .color-secundario.pasos-custom.px-5
+            .pasos-a__circle
+              .h2.text-white 3
+          .tarjeta.tarjeta--custom
+            .p-4
+              p.mb-0 Eso no quiere decir que la acción A sea definitivamente una mejor opción de inversión en este escenario, ya que la desviación estándar puede sesgar la media en cualquier dirección.
+      .col-md-11.col-12(data-aos="fade-down")
+        .tarjeta-avatar-b.mb-4
+          .color-secundario.pasos-custom.px-5
+            .pasos-a__circle
+              .h2.text-white 4
+          .tarjeta.tarjeta--custom
+            .p-4
+              p.mb-0 Estos son solo algunos ejemplos de cómo se puede usar la desviación estándar, pero existen muchos más. Generalmente, calcular la desviación estándar es valioso en cualquier momento que se desee saber qué tan lejos de la media puede estar un valor típico de una distribución.
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Estudio de variables continuas
+
+    p.mb-5(data-aos="fade-right") Una variable continua es un tipo específico de variable cuantitativa que se utiliza en estadística para describir datos que se pueden medir de alguna manera. Si sus datos tratan de medir la altura, el peso o el tiempo, entonces tiene una variable continua.
+
+    .row.mb-5.justify-content-center.align-items-center
+      .col-12.col-md-4.mb-5.mb-lg-0(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-38.svg', alt='')  
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        .cajon.color-acento-botones.p-4.mb-2
+          p.mb-0 Definamos más un par de términos utilizados en nuestra definición. Una variable en estadística no es lo mismo que una variable en álgebra. En estadística, una variable es algo que nos da datos. Algunos ejemplos de variables en las estadísticas pueden incluir edad, color de ojos, altura, número de hermanos, sexo o número de mascotas. Nuestra definición de variable continua también menciona que es cuantitativa. Los datos cuantitativos involucran cantidades o números. En los ejemplos de variables enumerados anteriormente, su edad, altura, número de hermanos y número de mascotas son todas variables cuantitativas.
+
+    
+    .tarjeta--container.row.mb-5
+      .col-md.tarjeta.color-acento-botones.px-5.py-3
+        .row.justify-content-center.mb-4
+          .col-6
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-39.svg', alt='')
+        p La definición también menciona que los datos se pueden medir de alguna manera. Para comprender esto, debe comprender las variables discretas. Los datos se consideran discretos si son un recuento. Cuando contamos cosas, usamos números enteros como 0, 1, 2 y 3. Mi ejemplo favorito de una variable discreta es cuántos huevos pone una gallina. Cada día una gallina puede o no poner un huevo, pero hay dos cosas que nunca pueden suceder. Nunca puede haber un número negativo de huevos, y nunca puede haber una fracción o una porción de un huevo.
+      .col-md.tarjeta.color-acento-contenido.px-5.py-3
+        .row.justify-content-center.mb-4
+          .col-6
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-40.svg', alt='')
+        p Las variables continuas son variables que miden algo. Un buen ejemplo de variable continua es cuántos galones de leche da una vaca. Hasta donde se sabe, las vacas no saben cómo dejar de producir o dar leche después de exactamente 4 galones. Bessie puede dar 4,17 galones el lunes, 3,89 galones el martes y 4,2 galones el miércoles. Observe que las variables continuas nos permiten tener decimales o fracciones.
+
+
 
 
 
