@@ -104,7 +104,7 @@
 
           
     .row.mb-5.align-self-stretch.justify-content-center
-      .col-12.col-md-4.mb-5.mb-lg-0(data-aos="fade-right")
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
         figure
           img(src='@/assets/curso/temas/tema1/tema1-11.png', alt='')  
       .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
@@ -884,6 +884,254 @@
         .col-lg-12
           .bloque-texto-a__texto.p-4
             p Cualquier combinación lineal de una colección fija de desviaciones normales es una desviación normal. Muchos resultados y métodos, como la propagación de la incertidumbre y el ajuste de parámetros por mínimos cuadrados, pueden derivarse analíticamente de forma explícita cuando las variables relevantes se distribuyen normalmente. Una distribución normal a veces se denomina informalmente curva de campana. Sin embargo, muchas otras distribuciones tienen forma de campana (como las distribuciones de Cauchy, de Student y logística).
+
+
+    Separador
+    #t_1_4.titulo-segundo.color-acento-botones(data-aos="fade-right")
+      h2 1.4 Muestreo, distribución de medias muéstrales
+
+    p.mb-5(data-aos="fade-down-right") Para este tema se invita a revisar de qué trata el muestreo y la distribución de medias muestrales.
+    
+    .tarjeta.tarjeta--azul.p-4.mb-5(data-aos="fade-down-left") 
+      SlyderA(tipo="b")
+        .row
+          .col-md-5.mb-4.mb-md-0
+            p El muestreo es un proceso para seleccionar una muestra representativa de una población. Se utiliza en situaciones donde no es factible obtener información de todos los miembros de la población, como en análisis biológicos, control de calidad o encuestas sociales. El método básico es el muestreo aleatorio simple, donde cada elemento tiene la misma probabilidad de ser seleccionado. El muestreo y la inferencia estadística son herramientas importantes en la investigación científica y el análisis de datos. 
+          .col-md-7
+            figure
+              img(src='@/assets/curso/temas/tema1/tema1-74.png', alt='')
+        .row
+          .col-md-5.mb-4.mb-md-0
+            p En una muestra aleatoria de una clase de 50 estudiantes, por ejemplo, cada estudiante tiene la misma probabilidad, 1/50, de ser seleccionado. Cada combinación de elementos extraídos de la población también tiene la misma probabilidad de ser seleccionados. El muestreo basado en la teoría de la probabilidad permite al investigador determinar la probabilidad que los hallazgos estadísticos son el resultado del azar. 
+          .col-md-7
+            figure
+              img(src='@/assets/curso/temas/tema1/tema1-75.png', alt='')
+        .row
+          .col-md-5.mb-4.mb-md-0
+            p Los métodos más utilizados, refinamientos de esta idea básica, son el muestreo estratificado (en el que la población se divide en clases y se extraen muestras aleatorias simples de cada clase), el muestreo por conglomerados (en el que la unidad de la muestra es un grupo, como un hogar) y muestreo sistemático (muestras tomadas por cualquier sistema que no sea una elección aleatoria, como cada décimo nombre en una lista). 
+          .col-md-7
+            figure
+              img(src='@/assets/curso/temas/tema1/tema1-76.png', alt='')
+        .row
+          .col-md-5.mb-4.mb-md-0
+            p Una alternativa al muestreo probabilístico es muestreo de juicio, en el que la selección se basa en el juicio del investigador y existe una probabilidad desconocida de inclusión en la muestra para cualquier caso dado. Por lo general, se prefieren los métodos de probabilidad porque evitan el sesgo de selección y permiten estimar el error de muestreo (la diferencia entre la medida obtenida de la muestra y la de toda la población de la que se extrajo la muestra). 
+          .col-md-7
+            figure
+              img(src='@/assets/curso/temas/tema1/tema1-77.png', alt='')
+        .row
+          .col-md-5.mb-4.mb-md-0
+            h4.mb-3 Algunas características de muestreo son:
+            ul.lista-ul.mb-2
+              li
+                i.lista-ul__vineta(style="color:#AD84FF")
+                | Los Contadores Públicos Certificados utilizan el muestreo durante las auditorías para determinar la precisión y la integridad de los saldos de las cuentas. 
+              li
+                i.lista-ul__vineta(style="color:#AD84FF")
+                | Los tipos de muestreo incluyen muestreo aleatorio, muestreo por bloques, muestreo por juicio y muestreo sistemático.  
+              li
+                i.lista-ul__vineta(style="color:#AD84FF")
+                | Las empresas utilizan el muestreo como una herramienta de marketing para identificar las necesidades y deseos de su mercado objetivo. 
+          .col-md-7
+            figure
+              img(src='@/assets/curso/temas/tema1/tema1-78.png', alt='')
+        .row
+          .col-md-5.mb-4.mb-md-0
+            p En auditorías financieras, los contadores públicos certificados utilizan el muestreo de auditoría para evaluar la precisión de los saldos de cuentas en los estados financieros. Este método se utiliza cuando la población de transacciones es grande. Además, los gerentes empresariales emplean el muestreo de clientes para evaluar la demanda de nuevos productos y el éxito del marketing. El muestreo es una herramienta útil en la toma de decisiones y evaluación de datos. 
+          .col-md-7
+            figure
+              img(src='@/assets/curso/temas/tema1/tema1-79.png', alt='')
+        .row
+          .col-md-5.mb-4.mb-md-0
+            p La muestra elegida debe ser una representación justa de toda la población. Al tomar una muestra de una población más grande, es importante considerar cómo se elige la muestra. Para obtener una muestra representativa, se debe extraer al azar y abarcar a toda la población. Por ejemplo, se podría usar un sistema de lotería para determinar la edad promedio de los estudiantes en una universidad tomando una muestra del 10% del cuerpo estudiantil. 
+          .col-md-7
+            figure
+              img(src='@/assets/curso/temas/tema1/tema1-80.png', alt='')
+
+    p.mb-5(data-aos="fade-down-right") Y ahora se sugiere complementar la información con la siguiente presentación.
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        LineaTiempoD.color-primario
+          .row(numero="1" titulo="Muestreo aleatorio")
+            .col-12.mb-4.mb-md-0
+              .row 
+                .col-3.d-none.d-sm-none.d-md-block
+                  div.formulas.mb-3
+                    img(src='@/assets/curso/temas/tema1/tema1-82.svg', alt='')
+                .col 
+                  p.text-small Con el muestreo aleatorio, cada elemento de una población tiene la misma probabilidad de ser elegido. Es el más alejado de cualquier sesgo potencial porque no hay un juicio humano involucrado en la selección de la muestra.  Por ejemplo, una muestra aleatoria puede incluir elegir los nombres de 25 empleados de un sombrero en una empresa de 250 empleados. La población es de 250 empleados y la muestra es aleatoria porque cada empleado tiene la misma probabilidad de ser elegido.
+          .row(numero="2" titulo="Muestreo discrecional o de juicio")
+            .col-12.mb-4.mb-md-0
+              p.text-small Se puede utilizar el juicio del auditor para seleccionar la muestra de la población completa. Un auditor solo puede estar preocupado por transacciones de naturaleza material. Por ejemplo, suponga que el auditor establece el umbral de importancia relativa para las transacciones de cuentas por pagar en $ 10,000. Si el cliente proporciona una lista completa de 15 transacciones de más de $ 10,000, el auditor puede optar por revisar todas las transacciones debido al pequeño tamaño de la población.
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-83.svg', alt='')
+          .row(numero="3" titulo="Muestreo en bloque")
+            .col-12.mb-4.mb-md-0
+              p.text-small El muestreo por bloques toma una serie consecutiva de elementos dentro de la población para usar como muestra. Por ejemplo, una lista de todas las transacciones de ventas en un período contable podría clasificarse de varias formas, incluso por fecha o por monto en dólares.
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-84.svg', alt='')
+              .cajon.color-acento-contenido.p-4.mb-2
+                p.text-small.mb-0 Un auditor puede solicitar que el contador de la empresa proporcione la lista en un formato u otro para seleccionar una muestra de un segmento específico de la lista. Este método requiere muy poca modificación por parte del auditor, pero es probable que un bloque de transacciones no sea representativo de la población completa.
+              .row 
+                .col-3.d-none.d-sm-none.d-md-block
+                  div.formulas.mb-3
+                    img(src='@/assets/curso/temas/tema1/tema1-85.svg', alt='')
+                .col 
+                  p.text-small Alternativamente, un auditor puede identificar todas las cuentas del libro mayor con una variación mayor al 10% del período anterior. En este caso, el auditor está limitando la población de la que se deriva la selección de la muestra. Desafortunadamente, el juicio humano utilizado en el muestreo siempre conlleva la posibilidad de sesgo, ya sea explícito o implícito.
+          .row(numero="4" titulo="Muestreo sistemático")
+            .col-12.mb-4.mb-md-0
+              p.text-small Los investigadores utilizan el método de muestreo sistemático para elegir los miembros de la muestra de una población a intervalos regulares. Requiere la selección de un punto de partida para la muestra y el tamaño de la muestra que pueda repetirse a intervalos regulares.
+              .cajon.color-acento-contenido.p-4.mb-2
+                p.text-small.mb-0 Este tipo de método de muestreo tiene un rango predefinido y, por lo tanto, esta técnica de muestreo es la que requiere menos tiempo.
+              div.formulas.mb-3
+                img(src='@/assets/curso/temas/tema1/tema1-86.svg', alt='')
+              p.text-small Suponga que un auditor está revisando los controles internos relacionados con la cuenta de efectivo de una empresa y desea probar la política de la empresa que estipula que los cheques que superen los $ 10,000 deben estar firmados por dos personas. 
+              p.text-small La población consiste en cada cheque de la compañía que exceda los $ 10,000 durante el año fiscal, que, en este ejemplo, fue de 300. El auditor usa estadísticas de probabilidad y determina que el tamaño de la muestra debe ser el 20% de la población o 60 cheques. El intervalo de muestreo es 5 (300 controles / 60 controles de muestra).
+              .row 
+                .col-3.d-none.d-sm-none.d-md-block
+                  div.formulas.mb-3
+                    img(src='@/assets/curso/temas/tema1/tema1-87.svg', alt='')
+                .col 
+                  p.text-small Por lo tanto, el auditor selecciona una de cada cinco verificaciones para probarlas. Suponiendo que no se encuentran errores en el trabajo de prueba de muestreo, el análisis estadístico le da al auditor una tasa de confianza del 95% de que el procedimiento de verificación se realizó correctamente. El auditor prueba la muestra de 60 cheques y no encuentra errores, por lo que concluye que el control interno sobre el efectivo está funcionando correctamente.
+          .row(numero="5" titulo="Ejemplo de muestreo de marketing")
+            .col-12.mb-4.mb-md-0
+              p.text-small Las empresas tienen como objetivo vender sus productos y / o servicios a los mercados objetivo. Antes de presentar productos al mercado, las empresas generalmente identifican las necesidades y deseos de su público objetivo. Para hacerlo, pueden emplear un muestreo de la población del mercado objetivo para obtener una mejor comprensión de esas necesidades para luego crear un producto y / o servicio que satisfaga esas necesidades. En este caso, recoger las opiniones de la muestra ayuda a identificar las necesidades del conjunto.
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-81.png', alt='')  
+  
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Distribución de medias muestrales
+            
+    .row.mb-5.align-self-stretch.justify-content-center
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-88.svg', alt='')  
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        p La media muestral de un grupo de observaciones es una estimación de la media poblacional μ. Dada una muestra de tamaño n, considere n variables aleatorias independientes X1, X2, …, Xn, cada una de las cuales corresponde a una observación seleccionada al azar. Cada una de estas variables tiene la distribución de la población, con media μ y desviación estándar σ. La media muestral se define como:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-89.svg', alt='')
+        p Por las propiedades de las medias y las varianzas de las variables aleatorias, la media y la varianza de la media muestral son las siguientes:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-90.svg', alt='')
+        p Aunque la media de la distribución de  es idéntica a la media de la distribución de la población, la varianza es mucho menor para tamaños de muestra grandes.
+        
+          
+    .row.mb-5.align-self-stretch.justify-content-center
+      .col-12
+        .cajon.color-acento-botones.p-4.mb-2
+          p.mb-0 Por ejemplo, suponga que la variable aleatoria X registra el puntaje de un estudiante seleccionado al azar en una prueba nacional, donde la distribución de la población para el puntaje es normal con una media de 70 y una desviación estándar de 5 (N (70,5)). Dada una muestra aleatoria simple (SRS) de 200 estudiantes, la distribución de la puntuación media de la muestra  tiene una media de 70 y una desviación estándar de 5 / sqrt (200) = 5 / 14,14 = 0,35.
+    
+    .row.mb-5.align-self-stretch.justify-content-center
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        p La distribución de medias muestrales se define como el conjunto de medias de todas las posibles muestras aleatorias de un tamaño específico (n) seleccionadas de una población específica. Esta distribución tiene características bien definidas (y predecibles) que se especifican en el teorema del Límite central.
+        .row.justify-content-center.align-items-center.mb-5
+          .col-12.col-lg-11(data-aos="fade-right")
+            .titulo-sexto.color-acento-botones
+              p.titulo.pb-0.mb-0 #[b Figura 5.] #[i Distribución de medias muestrales] 
+            figure
+              img(src='@/assets/curso/temas/tema1/tema1-92.svg', alt='')  
+              figcaption.text-small Nota. Tomada de http://virtual.umng.edu.co/distancia/ecosistema/odin/odin_desktop.php?path=Li4vb3Zhcy9pbmdlbmllcmlhX2luZHVzdHJpYWwvZXN0YWRpc3RpY2FfaWkvdW5pZGFkXzEv#slide_2
+        p Cuando la distribución de la población es normal, la distribución de la media muestral también es normal. Para una distribución de población normal con media μ y desviación estándar σ, la distribución de la media de la muestra es normal, con media μ y desviación estándar.
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-90.svg', alt='')
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-91.svg', alt='')  
+
+    .row.mb-5.align-self-stretch.justify-content-center(data-aos="fade-right")
+      .col-12
+        .cajon.color-acento-botones.p-4.mb-2
+          p.mb-0 Este resultado se deriva del hecho de que cualquier combinación lineal de variables aleatorias normales independientes también se distribuye normalmente. Esto significa que para dos variables aleatorias normales independientes X, Y y cualquier constante a y b, Ax + By serán distribuidos normalmente. En el caso de la media muestral, la combinación lineal es = (1 / n) * (X1 + X2 + ... Xn).
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Teorema del Límite central
+
+    .row.mb-5.align-self-stretch.justify-content-center
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        p El resultado más importante sobre las medias muestrales es el teorema del Límite central. En pocas palabras, este teorema dice que para un tamaño de muestra n suficientemente grande, la distribución de la media muestral X se acercará a una distribución normal. Esto es cierto para una muestra de variables aleatorias independientes de cualquier distribución de población, siempre que la población tenga una desviación estándar finita σ. Una declaración formal del teorema del límite central es la siguiente:
+        p Si X es la media de una muestra aleatoria X1, X2, ..., Xn de tamaño n de una distribución con una media finita μ y una varianza positiva finita σ², entonces la distribución de W =
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-95.svg', alt='')
+        p es N (0,1) en el límite cuando n se acerca al infinito.
+        p Esto significa que la variable  se distribuye
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-96.svg', alt='')
+        p Una aplicación bien conocida de este teorema es la aproximación normal a la distribución binomial.
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-94.svg', alt='')  
+
+
+    .row.justify-content-center.align-items-center.mb-4
+      .col-12.col-lg-10(data-aos="fade-right")
+        .titulo-sexto.color-acento-botones
+          p.titulo.pb-0.mb-0 #[b Figura 6.] #[i Teorema del Límite central] 
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-97.svg', alt='')  
+          figcaption Nota. Tomada de  http://virtual.umng.edu.co/distancia/ecosistema/odin/odin_desktop.php?path=Li4vb3Zhcy9pbmdlbmllcmlhX2luZHVzdHJpYWwvZXN0YWRpc3RpY2FfaWkvdW5pZGFkXzEv#slide_3
+
+    p.mb-5(data-aos="fade-down-right") El concepto de distribución de medias muestrales y sus características deben ser intuitivamente razonables:
+
+    .tarjeta--container.row.mb-5(data-aos="fade-down-right")
+      .col-md.tarjeta.tarjeta--azul.px-5.py-3
+        .row.justify-content-center.mb-4
+          .col-6
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-39.svg', alt='')
+        p Es de notar que las medias muestrales son variables. Si se seleccionan dos (o más) muestras de la misma población, es probable que las dos muestras tienen medias diferentes.
+      .col-md.tarjeta.tarjeta--gris.px-5.py-3
+        .row.justify-content-center.mb-4
+          .col-6
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-39.svg', alt='')
+        p Aunque las muestras tendrán medias diferentes, se debe esperar que las medias muestrales estén cerca de la media de la población. Es decir, las medias de la muestra deberían “acumularse” alrededor de μ. Por tanto, la distribución de las medias muestrales tiende a adoptar una forma normal con un valor esperado de μ.
+      .col-md.tarjeta.tarjeta--azul.px-5.py-3
+        .row.justify-content-center.mb-4
+          .col-6
+            div.formulas.mb-3
+              img(src='@/assets/curso/temas/tema1/tema1-39.svg', alt='')
+        p Debe darse cuenta de que la media de una muestra individual probablemente no será idéntica a la media de su población; es decir, habrá algún “error” entre X y μ. Algunas medias de muestra estarán relativamente cerca de μ y otras relativamente lejos. El error estándar proporciona una medida de la distancia estándar entre X y μ.
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Puntuaciones Z y ubicación dentro de la distribución de medias muestrales
+
+    .row.mb-5.align-self-stretch
+      .col-12.col-md-12.mb-5.mb-lg-0(data-aos="fade-left")
+        ul.lista-ul.mb-2
+          li
+            i.lista-ul__vineta(style="color:#AD84FF")
+            | Dentro de la distribución de las medias muestrales, la ubicación de cada media muestral se puede especificar mediante una puntuación Z,
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-98.svg', alt='')
+        ul.lista-ul.mb-2
+          li
+            i.lista-ul__vineta(style="color:#AD84FF")
+            | Como siempre, una puntuación Z positiva indica una media muestral mayor que μ y una puntuación Z negativa corresponde a una media muestral menor que μ.
+      .col-12.text-center.py-3(data-aos="fade-left")
+        h5 El valor numérico de la puntuación Z indica la distancia entre  y μ medida en términos del error estándar.
+        
+
+
+
+
+
+
+
+
+
 
 
 
