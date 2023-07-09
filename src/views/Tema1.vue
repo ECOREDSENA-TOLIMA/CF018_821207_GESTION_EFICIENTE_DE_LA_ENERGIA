@@ -1469,6 +1469,200 @@
           img(src='@/assets/curso/temas/tema1/tema1-122.svg', alt='')
       
 
+    Separador
+    #t_1_8.titulo-segundo.color-secundario(data-aos="fade-right")
+      h2 1.8 Cálculo de probabilidades y probabilidad condicionada
+
+    .row.mb-5.align-self-stretch.justify-content-center
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-123.svg', alt='')  
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        p Una probabilidad es un modelo representado matemáticamente de un fenómeno aleatorio. Las probabilidades pueden ser marginales, conjuntas o condicionales.
+        p Comprender sus diferencias y cómo manipularlas es clave para tener éxito en la comprensión de los fundamentos de las estadísticas.
+        .row.justify-content-center.align-items-center.mb-3
+          .col-12(data-aos="fade-right")
+            ul.lista-ul.mb-2
+              li.mb-0
+                i.fas.fa-play(style="color:#25FFFF")
+                | Cálculo de probabilidades de eventos compatibles e incompatibles
+        p Se explicará cómo calcular la probabilidad de un evento aislado con la ley de Laplace y calcular la probabilidad de la unión de dos eventos cuando son compatibles y cuándo son incompatibles.
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Ley de Laplace:
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.mb-3(data-aos="fade-right")
+        .cajon.tarjeta--azul.p-4 
+          p No es más que la fórmula para calcular la probabilidad de que ocurra un evento aislado. Cuando en un experimento aleatorio, todos los eventos tienen la misma probabilidad de ocurrir, la probabilidad de que ocurra un evento A es:
+          div.formulas.mb-3
+            img(src='@/assets/curso/temas/tema1/tema1-124.svg', alt='')
+          p En el numerador colocamos el número de casos favorables para que ocurra el evento A y en el denominador colocamos el número de eventos posibles. Por ejemplo, en un dado, ¿cuál es la probabilidad de obtener un 2?
+      .col-12.mb-3(data-aos="fade-right")
+        .cajon.tarjeta--gris.p-4 
+          p En este caso, el número de casos favorables es 1, ya que el dado tiene solo un 2. El número de casos posibles es 6, que son los números que tiene un dado. Por lo tanto, la probabilidad de que salga un 2 se puede escribir como P(2) y es igual a:
+          div.formulas.mb-3
+            img(src='@/assets/curso/temas/tema1/tema1-125.svg', alt='')
+      .col-12.mb-3(data-aos="fade-right")
+        .cajon.tarjeta--gris.p-4 
+          div.formulas.mb-3
+            img(src='@/assets/curso/temas/tema1/tema1-126.svg', alt='')
+          p Siendo 1 la probabilidad del evento seguro (siempre ocurrirá) y 0 es la probabilidad del evento imposible (nunca ocurrirá).
+
+
+    .row.mb-5.align-self-stretch.justify-content-center.align-items-center
+      .col-12.col-md-7.mb-5.mb-lg-0(data-aos="fade-left")
+        p Cómo calcular la probabilidad de ocurrencia de A o B, si los eventos son incompatibles: Si A y B son dos eventos incompatibles, es decir, no pueden ocurrir al mismo tiempo, la probabilidad de que ocurra A o B será la suma de las probabilidades de que cada evento ocurra por separado.
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-128.svg', alt='')
+        p La probabilidad de obtener una bola blanca es:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-129.svg', alt='')
+        p La probabilidad de obtener una bola negra es:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-130.svg', alt='')
+        p Por lo tanto, la probabilidad de obtener una bola blanca o una bola negra es:
+        div.formulas.mb-1
+          img(src='@/assets/curso/temas/tema1/tema1-131.svg', alt='')
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-132.svg', alt='')
+      .col-12.col-md-5.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-127.svg', alt='')  
+
+          
+    .row.mb-5.align-self-stretch.justify-content-center.align-items-center
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-133.svg', alt='') 
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        p Cómo calcular la probabilidad de que ocurra A o B, si los eventos son compatibles: si A y B son dos eventos compatibles, es decir, pueden ocurrir al mismo tiempo, entonces la probabilidad de que ocurran A o B será:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-134.svg', alt='')
+        p P (A ∩ B) dice: la probabilidad de que ocurran A y B.
+
+    .bloque-texto-a.color-primario.p-3.mb-5(data-aos="fade-down-right") 
+      .row.m-0.align-items-center.justify-content-between
+        .col-lg-12
+          .bloque-texto-a__texto.p-3
+            p Esta vez, la suma de las probabilidades de que cada evento ocurra por separado debe restarse de la probabilidad de que los dos eventos ocurran al mismo tiempo. Por ejemplo, calcular la probabilidad de que al lanzar un dado el número obtenido sea par o que sea un 4. En este caso, el evento “obtener un número par” y el evento “obtener un 4” son compatibles, porque si obtenemos un 4 están sucediendo ambos eventos a la vez. Por lo tanto, la probabilidad de obtener 4 o un número par se calculará con la fórmula:
+
+
+    .row.mb-5.align-self-stretch.justify-content-center.align-items-center
+      .col-12.col-md-6.mb-5.mb-lg-0(data-aos="fade-left")
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-136.svg', alt='')
+        p La probabilidad de obtener un número par es:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-137.svg', alt='')
+        p La probabilidad de obtener un 4 es:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-138.svg', alt='')
+        p La probabilidad de obtener un número par y un 4 es:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-139.svg', alt='')
+      .col-12.col-md-6.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-135.svg', alt='')  
+
+    .row.mb-5.align-self-stretch.justify-content-center.align-items-center
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-140.svg', alt='') 
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        p Solo hay una posibilidad entre 6 ya que 4 es el único número que cumple ambos eventos al mismo tiempo. Finalmente, la probabilidad de obtener un número par o 4 es:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-141.svg', alt='')
+        p Que la sustitución de cada término por su valor nos queda a nosotros:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-142.svg', alt='')
+
+
+    .row.justify-content-center.align-items-center.mb-3
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | Probabilidad condicionada
+
+            
+    .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-4.mb-5(data-aos="fade-down-right")
+      .bloque-texto-g__img(
+        :style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-143.png')})`}"
+      )
+      .bloque-texto-g__texto.p-4
+        p.mb-0 En la teoría de la probabilidad, la probabilidad condicionada o condicional es una medida de la probabilidad de que ocurra un evento, dado que ya ha ocurrido otro evento (por suposición, presunción, afirmación o evidencia). Veamos: 
+
+    .row.mb-5.align-self-stretch.justify-content-center.align-items-center
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        p Si el evento de interés es A y se sabe o se supone que ocurrió el evento B, “la probabilidad condicional de A dado B “, o “la probabilidad de A bajo la condición B “, generalmente se escribe como P (A | B) y ocasionalmente PB(A). Esto también se puede entender como la fracción de probabilidad B que se cruza con A:
+      .col-12.col-md-4.mb-5.mb-lg-0(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-144.svg', alt='') 
+
+
+    .row.mb-5.align-self-stretch.justify-content-center.align-items-center
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        .row.justify-content-center.align-items-center.mb-3
+          .col-12(data-aos="fade-right")
+            ul.lista-ul.mb-2
+              li.mb-0
+                i.fas.fa-play(style="color:#25FFFF")
+                | Por ejemplo…
+        p La probabilidad de que una persona determinada tenga tos en un día determinado puede ser solo del 5%. Pero si sabemos o asumimos que la persona está enferma, es mucho más probable que esté tosiendo. Por ejemplo, la probabilidad condicional de que alguien no esté bien tosiendo podría ser del 75%, en cuyo caso tendríamos que P (Tos) = 5% y P (Tos | Enfermo) = 75%. Aunque, no tiene que haber relación o dependencia entre A y B, y no tienen que ocurrir simultáneamente. 
+        .row.justify-content-center.align-items-center.mb-3
+          .col-12(data-aos="fade-right")
+            ul.lista-ul.mb-2
+              li.mb-0
+                i.fas.fa-play(style="color:#25FFFF")
+                | Teniendo en cuenta que… 
+        p P (A | B) puede o no ser igual a P (A) (la probabilidad incondicional de A). Si P (A | B) = P (A), entonces se dice que los eventos A y B son independientes: en tal caso, el conocimiento sobre cualquiera de los eventos no altera la probabilidad de los demás. P (A | B) (la probabilidad condicional de A dado B) típicamente difiere de P (B | A). 
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-145.svg', alt='') 
+
+
+    .row.mb-5.align-self-stretch.justify-content-center.align-items-center
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-146.svg', alt='') 
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        .row.justify-content-center.align-items-center.mb-3
+          .col-12(data-aos="fade-right")
+            ul.lista-ul.mb-2
+              li.mb-0
+                i.fas.fa-play(style="color:#25FFFF")
+                | Por ejemplo…
+        p Si una persona tiene fiebre del dengue, podría tener 90% de probabilidades de dar positivo en la prueba de la enfermedad. En este caso, lo que se está midiendo es que si ha ocurrido el evento B (tener dengue), la probabilidad de A (resultado positivo) dado que B ocurrió es del 90%: P (A | B) = 90%. Alternativamente, si una persona da positivo en la prueba del dengue, es posible que solo tenga 15% de probabilidades de tener esta rara enfermedad debido a las altas tasas de falsos positivos. 
+        .row.justify-content-center.align-items-center.mb-3
+          .col-12(data-aos="fade-right")
+            ul.lista-ul.mb-2
+              li.mb-0
+                i.fas.fa-play(style="color:#25FFFF")
+                | En este caso… 
+        p La probabilidad del evento B (tener dengue) dado que el evento A (resultado positivo) que ha ocurrido es 15%: P (B | A) = 15% Ahora debería ser evidente que igualar falsamente las dos probabilidades puede conducir a varios errores de razonamiento, lo que comúnmente se ve a través de falacias de tasa base.
+
+
+    .row.mb-5.align-self-stretch.justify-content-center.align-items-center
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        .row.justify-content-center.align-items-center.mb-3
+          .col-12(data-aos="fade-right")
+            ul.lista-ul.mb-2
+              li.mb-0
+                i.fas.fa-play(style="color:#25FFFF")
+                | Si bien las probabilidades condicionales pueden proporcionar información extremadamente útil…
+        p A menudo se proporciona o se dispone de información limitada. Por lo tanto, puede ser útil revertir o convertir una probabilidad de condición usando el teorema de Bayes:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-148.svg', alt='')
+        p Otra opción es mostrar probabilidades condicionales en una tabla de probabilidad condicional para iluminar la relación entre eventos.
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-147.svg', alt='')
+
 
 
 
