@@ -1416,6 +1416,60 @@
                     span Descargar
                     i.fas.fa-file-download
 
+    Separador
+    #t_1_7.titulo-segundo.color-secundario(data-aos="fade-right")
+      h2 1.7 Probabilidad de sucesos compatibles e incompatibles
+
+    .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade-down-right")
+      .bloque-texto-g__img(
+        :style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-117.png')})`}"
+      )
+      .bloque-texto-g__texto.p-4
+        p.mb-0 Dos o más eventos son compatibles, si pueden cumplirse simultáneamente; es decir, si tienen al menos un resultado común. Por el contrario, son incompatibles o mutuamente excluyentes y su intersección es el conjunto vacío Ø si se analiza el siguiente experimento de lanzar un dado. 
+
+
+    .row.mb-5.align-self-stretch.justify-content-center
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        p Comencemos con el siguiente experimento: tiramos un dado de seis caras y vemos cuál es el resultado. Consideremos los siguientes eventos A= {2, 3}, B= {1,2}, C= {5}.
+        p Observamos que, si extraemos 2, luego A está satisfecho, así como B. Decimos que los eventos son compatibles, esto significa que pueden ocurrir simultáneamente. Por el contrario, los eventos B y C son incompatibles, ya que los dos no pueden suceder simultáneamente.
+        .cajon.color-acento-contenido.p-4.mb-2
+          p.mb-0 Para ver cuando dos eventos son compatibles o no, podemos observar que A y B tienen un elemento común: 2, por lo tanto, serán compatibles. De lo contrario, A y C no tienen ningún elemento común y, por tanto, son incompatibles. Expresamos esto diciendo que dos eventos A y B son compatibles si:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-119.svg', alt='')
+        p y, por el contrario, son incompatibles si:
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-120.svg', alt='')
+        p Si tenemos tres o más eventos, decimos que son incompatibles de dos en dos si dos eventos son incompatibles (de manera similar, son compatibles de dos en dos si dos eventos son compatibles). En nuestro caso A, B y C no son incompatibles de dos en dos, ya que, aunque A y C, al igual que B y C son incompatibles, A y B son compatibles.
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-118.svg', alt='')  
+
+    .bloque-texto-a.color-secundario.p-3.mb-5(data-aos="fade-down-right") 
+      .row.m-0.align-items-center.justify-content-between
+        .col-lg-12
+          .bloque-texto-a__texto.p-3
+            h5 Probabilidad de sucesos compatibles e incompatibles
+            p Dos o más eventos son compatibles, si pueden cumplirse simultáneamente; es decir, si tienen al menos un resultado común. Por el contrario, son incompatibles o mutuamente excluyentes y su intersección es el conjunto vacío Ø. Si volvemos a centrarnos en el experimento de lanzar un dado.
+    
+    .row.mb-5.align-self-stretch.justify-content-center
+      .col-12(data-aos="fade-left")
+        .cajon.color-acento-botones.p-4.mb-2
+          h5 Eventos
+          p.mb-0 A = {2,3} B = {1,2} C = {4,5} cumplen con lo siguiente: 
+          p A y B son compatibles, y B y C son incompatibles, B Ո C = Ø
+        
+    .tarjeta--container.row.mb-5(data-aos="fade-down-right")
+      .col-md.tarjeta.tarjeta--azul.px-5.py-3
+        h5 Evento compatible
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-121.svg', alt='')
+      .col-md.tarjeta.tarjeta--gris.px-5.py-3
+        h5 Evento incompatible
+        div.formulas.mb-3
+          img(src='@/assets/curso/temas/tema1/tema1-122.svg', alt='')
+      
+
+
 
 
 
