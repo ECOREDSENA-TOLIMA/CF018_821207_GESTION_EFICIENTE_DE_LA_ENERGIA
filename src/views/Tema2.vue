@@ -280,6 +280,319 @@
 
     p.mb-5(data-aos="fade-down-right")  Existen innumerables tipos diferentes de tablas, gráficos y otras técnicas de visualización que pueden ayudar a los analistas a representar y transmitir datos importantes. Echemos un vistazo a 10 de los más comunes:
 
+    AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
+      .row(titulo="Gráfico de columnas")
+        .col-md-7.mb-4.mb-md-0
+          p Este es uno de los tipos más comunes de herramientas de visualización de datos. Hay una razón por la que aprendemos a hacer gráficos de columnas en la escuela primaria. Son una forma simple y tradicional de mostrar una comparación entre diferentes conjuntos de datos. También se puede utilizar un gráfico de columnas para realizar un seguimiento de los conjuntos de datos a lo largo del tiempo. 
+          p Un gráfico de columnas incluirá etiquetas de datos a lo largo del eje horizontal (X) con métricas o valores medidos presentados en el eje vertical (Y), también conocido como el lado izquierdo del gráfico. El eje Y normalmente comenzará en 0 y llegará tan alto como la medida más grande que está rastreando.
+        .col-md-5
+          figure
+            img(src='@/assets/curso/temas/tema2/tema2-15.png', alt='')
+        .col-12.mt-3
+          p Puede utilizar gráficos de columnas para realizar un seguimiento de las cifras de ventas mensuales, los ingresos por página de destino o medidas similares. Los colores consistentes ayudan a mantener el enfoque en los datos en sí, aunque puede introducir colores de acento para enfatizar puntos de datos importantes o para realizar un seguimiento de los cambios a lo largo del tiempo.
+      .row(titulo="Gráfico de barras")
+        .col-md-7.mb-4.mb-md-0
+          p A menudo puede usar un gráfico de barras y un gráfico de columnas de la misma manera, aunque los gráficos de columnas limitan su etiqueta y el espacio de comparación. Es mejor seguir con un gráfico de barras si:
+          ul.lista-ul.mb-2
+            li.mb-0
+              i.fas.fa-check(style="color:#25FFFF")
+              | Trabaja con etiquetas más largas.
+            li.mb-0
+              i.fas.fa-check(style="color:#25FFFF")
+              | Visualiza números negativos.
+            li.mb-0
+              i.fas.fa-check(style="color:#25FFFF")
+              | Compara 10 o más elementos.
+          p En este caso, sus etiquetas de datos irán a lo largo del eje Y, mientras que las medidas estarán a lo largo del eje X. 
+        .col-md-5
+          figure
+            img(src='@/assets/curso/temas/tema2/tema2-16.png', alt='')
+      .row(titulo="Gráfico de barras apiladas")
+        .col-md-7.mb-4.mb-md-0
+          p ¿Está comparando muchos elementos diferentes? ¿Desea realizar un seguimiento del crecimiento individual de cada conjunto de datos en sí, junto con el crecimiento del grupo como un todo colectivo? Para revelar esta relación de parte a todo, se creará un gráfico de barras apiladas. 
+          p Al eliminar el color de este gráfico, se vería similar a un gráfico de barras estándar. El diseño “apilado” representa la combinación de colores contrastantes de este gráfico. Estos colores se asignan a una leyenda que acompaña a su mapa.
+        .col-md-5
+          figure
+            img(src='@/assets/curso/temas/tema2/tema2-17.png', alt='')
+        .col-12.mt-3
+          p Por ejemplo, es posible que desee realizar un seguimiento del rendimiento de cuatro tipos diferentes de productos en cinco estrategias de ventas diferentes. La estrategia 1 a la estrategia 5 estará en su eje X, mientras que las cifras de ventas estarán en el eje Y.
+          .cajon.color-acento-contenido.p-4.mb-2
+            p Sin embargo, dentro de cada categoría de estrategia, tendrá cuatro bloques de colores diferentes. Cada uno representa uno de los tipos de productos. De esta manera, puede determinar qué estrategia funcionó mejor para cada tipo de producto en su conjunto, así como qué productos funcionaron bien dentro de cada estrategia. 
+      .row(titulo="Gráfico de líneas")
+        .col-md-7.mb-4.mb-md-0
+          p Este un tipo de gráficos estándar que se reconoce al instante. Un gráfico de líneas está diseñado para revelar tendencias, avances o cambios que ocurren a lo largo del tiempo. Como tal, funciona mejor cuando el conjunto de datos es continuo en lugar de estar lleno de arranques y paradas.
+          p Como un gráfico de columnas, las etiquetas de datos en un gráfico de líneas están en el eje X mientras que las medidas están en el eje Y.
+          p Se deben usar líneas continuas y evite trazar más de cuatro líneas, ya que cualquier cosa por encima de esto puede distraer; además, hay que  planificar el espacio suficiente para que tus líneas midan alrededor de 2/3 de la altura del eje Y.
+        .col-md-5
+          figure
+            img(src='@/assets/curso/temas/tema2/tema2-18.png', alt='')
+      .row(titulo="Gráfico de doble eje")
+        .col-md-7.mb-4.mb-md-0
+          p Este tipo de gráfico se utiliza para presentar la relación entre dos variables. Más específicamente, estos gráficos son útiles para demostrar la relación entre dos o más medidas con diferente amplitud y escala. Los gráficos de doble eje ayudan a presentar mucha información en el espacio limitado presente en su tablero y también le permiten comprender las tendencias que, de lo contrario, podría haber perdido.
+        .col-md-5
+          figure
+            img(src='@/assets/curso/temas/tema2/tema2-19.png', alt='')
+      .row(titulo="Gráfico Mekko")
+        .col-md-7.mb-4.mb-md-0
+          p Este es un gráfico con el que podría estar menos familiarizado, a menos que se encuentre en el espacio de análisis de datos. Un gráfico de Mekko tiene un diseño similar a un gráfico de barras apiladas, con una excepción importante: en lugar de seguir la progresión del tiempo, el eje X mide otra dimensión de sus conjuntos de datos. 
+          p Con este diseño, puede comparar valores, medir la composición de cada valor y analizar la distribución de datos, todo al mismo tiempo. 
+        .col-md-5
+          figure
+            img(src='@/assets/curso/temas/tema2/tema2-20.png', alt='')
+      .row(titulo="Gráfico circular")
+        .col-md-7.mb-4.mb-md-0
+          p Un gráfico circular representa un número estático, dividido en categorías que constituyen sus porciones individuales; este representará cantidades numéricas en porcentajes. Cuando sume todas las porciones separadas, deberían sumar el 100%. Estos son especialmente útiles en marketing digital, ya que puede usarlos para mostrar un desglose de:
+          ul.lista-ul.mb-2
+            li.mb-0
+              i.fas.fa-check(style="color:#25FFFF")
+              | Cuotas de mercado.
+            li.mb-0
+              i.fas.fa-check(style="color:#25FFFF")
+              | Gastos de marketing.
+            li.mb-0
+              i.fas.fa-check(style="color:#25FFFF")
+              | Demografía del cliente.
+            li.mb-0
+              i.fas.fa-check(style="color:#25FFFF")
+              | Uso del dispositivo del cliente (para pruebas de UX).
+            li.mb-0
+              i.fas.fa-check(style="color:#25FFFF")
+              | Fuentes de tráfico online.
+          .cajon.color-acento-contenido.p-4.mb-2
+            p Si se desea que su gráfico circular tenga mucha diferenciación entre los sectores, es mejor limitar la cantidad de categorías que ilustra.
+        .col-md-5
+          figure
+            img(src='@/assets/curso/temas/tema2/tema2-21.png', alt='')
+      .row(titulo="Diagrama de dispersión")
+        .col-md-7.mb-4.mb-md-0
+          p Este tipo de visualización también se denomina diagrama de dispersión y representa diferentes variables trazadas a lo largo de dos ejes. Tenga en cuenta que tanto el eje X como el eje Y son ejes de valor, ya que un gráfico de dispersión no utiliza un eje de categoría.
+          p Estos tipos de visualización de datos funcionan mejor cuando analiza varios puntos de datos y busca similitudes dentro del conjunto de datos. Al hacerlo, se puede notar cualquier valor atípico y también obtener una comprensión más clara de la distribución general de sus datos.
+          .cajon.color-acento-contenido.p-4.mb-2
+            p Digamos, por ejemplo, que desea medir las puntuaciones de los comentarios de los clientes que recibe su organización. También quería ver si los tiempos de respuesta de su mesa de servicio tienen algún impacto en esos puntajes. Los puntajes de retroalimentación varían de 0 a 10, por lo que esas serían sus medidas del eje Y. En su eje X, etiquetaría desde 0 hasta el tiempo de respuesta más largo permitido, como una hora. Luego, trazaría los puntajes que recibió, notando patrones y tendencias que pueden ayudarlo a informar sus esfuerzos de servicio. 
+        .col-md-5
+          figure
+            img(src='@/assets/curso/temas/tema2/tema2-22.png', alt='')
+      .row(titulo="Gráfico de burbujas")
+        .col-md-7.mb-4.mb-md-0
+          p Al igual que un gráfico de dispersión, un gráfico de burbujas también puede mostrar relaciones o distribución. En esta variación, sin embargo, reemplazará los puntos de datos con burbujas. También variará los tamaños de la burbuja para representar un tercer conjunto de datos.
+          p Al igual que con un gráfico de dispersión, uno de burbujas no utiliza un eje de categorías. Más bien, trazará los conjuntos de datos como valores X, valores Y y ahora, valores Z (tamaño de burbuja). 
+        .col-md-5
+          figure
+            img(src='@/assets/curso/temas/tema2/tema2-23.png', alt='')
+      .row(titulo="Gráfico de viñetas")
+        .col-md-7.mb-4.mb-md-0
+          p Este tipo de gráfico puede ayudar a realizar un seguimiento visual de su progreso. Similar al diseño gráfico de barras, estos también incorporan otros elementos visuales. Al usar un gráfico de viñetas, comenzará con una medida principal, y luego comparará esa medida con otra (o múltiple) para encontrar un significado y una conexión más profundos. 
+        .col-md-5
+          figure
+            img(src='@/assets/curso/temas/tema2/tema2-24.png', alt='')
+
+    .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade-down-right")
+      .bloque-texto-g__img(
+        :style="{'background-image': `url(${require('@/assets/curso/temas/tema2/tema2-25.png')})`}"
+      )
+      .bloque-texto-g__texto.p-4 
+        p.mb-0 Ahora que hemos explorado los diferentes tipos de gráficos, cuadros y mapas de visualización de datos, analicemos brevemente algunas de las razones por las que podría necesitar la visualización de datos en primer lugar. Si no sabe qué tipo de visual funcionará mejor para su empresa, es útil comprender las principales funciones comerciales que puede ofrecer la visualización de datos. Aquí están los cinco principales a considerar:
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        LineaTiempoD.color-primario
+          .row(numero="1" titulo="Comparación de valores")
+            .col-12.mb-4.mb-md-0
+              p.text-small Como analistas de datos, ve su parte justa de conjuntos de datos. Cuando desee comparar las diferencias y similitudes entre estos conjuntos, los gráficos son ideales. Revelan fácilmente los valores altos y bajos de un conjunto en particular para que pueda notar las principales diferencias, brechas y otras tendencias. Si necesita crear un gráfico de comparación, los siguientes tipos de visualizaciones son apropiados:
+              ul.lista-ul.mb-2
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de columnas
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de viñetas
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de Mekko
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico circular
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de barras
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de líneas
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de dispersión
+              .cajon.color-acento-contenido.p-4.mb-2
+                p.text-small.mb-0 Cualquiera de estas técnicas de visualización le permite escanear grandes cantidades de datos y aún así derivar patrones relevantes e informativos de ellos.
+          .row(numero="2" titulo="Mostrar composición")
+            .col-12.mb-4.mb-md-0
+              p.text-small También es posible que deba dividir sus conjuntos de valores, mostrando cómo las unidades individuales afectan el panorama general. Por ejemplo, es posible que desee realizar un seguimiento del acceso móvil general en su sitio web por tipo de dispositivo o ubicación geográfica. O quizás desee saber qué elementos de su reciente campaña de marketing digital resultaron ser los más exitosos. En este caso, puede utilizar cualquiera de estos tipos de visualizaciones de datos:
+              ul.lista-ul.mb-2
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico circular
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de barras apiladas
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de Mekko
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de columnas apiladas
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de área
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de cascada
+              .cajon.color-acento-contenido.p-4.mb-2
+                p.mb-0.text-small Todas estas representaciones permiten a los usuarios medir los niveles de desempeño individuales para determinar su efecto en el conjunto de datos general. 
+          .row(numero="3" titulo="Determinar la distribución")
+            .col-12.mb-4.mb-md-0
+              p.text-small ¿Está tratando de comprender la distribución general de sus datos? Si es así, un gráfico de distribución mostrará todos los posibles intervalos o valores del conjunto de valores, así como la frecuencia con la que ocurren. A partir de esta visualización, puede identificar las tendencias normales, así como cualquier valor atípico que pueda alterarlas. También puede obtener una imagen clara de qué tan amplio es el rango entre sus valores de información. Puede utilizar los siguientes tipos de visualizaciones de datos cuando necesite determinar la distribución:
+              ul.lista-ul.mb-2
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de dispersión
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de Mekko
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de líneas
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de columnas
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de barras
+          .row(numero="4" titulo="Investigación de tendencias")
+            .col-12.mb-4.mb-md-0
+              p.text-small ¿Terminó una campaña publicitaria televisiva reciente? ¿Qué tal el lanzamiento de un nuevo producto? 
+              p.text-small Una vez que el polvo se asiente y es hora de volver al trabajo, es su trabajo ver si esos esfuerzos tuvieron éxito. Cuando desee determinar cómo se desempeñó un conjunto de datos en particular durante un período de tiempo establecido, estos tipos de visualizaciones funcionan bien:
+              ul.lista-ul.mb-2
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de líneas
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de líneas de doble eje 
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de columnas
+          .row(numero="6" titulo="Comprensión de las relaciones en diferentes tipos de visualización de datos")
+            .col-12.mb-4.mb-md-0
+              p.text-small A veces, la mejor manera de comprender una variable dada es ver cómo se relaciona con una o varias otras variables. Por ejemplo, una variable podría tener un efecto positivo o negativo en otra. Puede utilizar estos tipos de gráficos para representar visualmente la relación entre las cosas:
+              ul.lista-ul.mb-2
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de dispersión
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de burbujas
+                li.mb-0.text-small
+                  i.fas.fa-check(style="color:#25FFFF")
+                  | Gráfico de líneas
+      .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema2/tema2-26.svg', alt='')  
+
+    Separador
+    #t_2_4.titulo-segundo.color-acento-botones(data-aos="fade-right")
+      h2 2.4 Herramientas #[strong software] más conocidas para procesar, graficar y analizar datos
+
+    p.mb-5(data-aos="fade-left") A continuación, encontrará las herramientas necesarias para procesar, graficar y analizar los datos:
+
+    .row.mb-5.align-self-stretch.justify-content-center.align-items-center
+      .col-12.col-md-4.mb-5.mb-lg-0(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema2/tema2-27.png', alt='')
+      .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
+        p Las herramientas de #[i software] de análisis de datos permiten a las empresas analizar grandes almacenes de datos para obtener una gran ventaja competitiva. El #[i software] de análisis de datos puede extraer datos que rastrean una amplia gama de actividades comerciales, desde las ventas actuales hasta el inventario histórico, y procesarlos en función de las consultas de los científicos de datos.
+        p Muchas tecnologías relacionadas permiten que el #[i software] de análisis cree sus resultados. Principalmente, estos incluyen herramientas de almacenamiento de datos, herramientas ETL, y - ahora más a menudo - el cálculo de la nube de infraestructura. Estas herramientas permiten conocer los datos que van desde el análisis predictivo, la inteligencia empresarial (un término que a menudo se usa indistintamente con el análisis de datos) y los datos estructurados y no estructurados.
+
+    .row.mb-5justify-content-center.align-items-center(data-aos="fade-down-right")
+      .col-12
+        .cajon.color-acento-botones.p-4.mb-2
+          p A medida que las herramientas de análisis evolucionan, utilizan cada vez más la inteligencia artificial y el aprendizaje automático. Esta IA y ML permiten “análisis aumentados”, lo que significa que los resultados de las consultas tienen mayor profundidad y detalle debido a las tecnologías avanzadas.
+
+    p.mb-5(data-aos="fade-left") Los resultados de una consulta de datos se muestran en un #[i software] de análisis de datos mediante un panel visual elaborado, generalmente con una serie de cuadros y gráficos codificados por colores que ilustran las líneas de tendencia empresarial. Estos cuadros de mando se pueden personalizar en función de las aportaciones del personal. También se pueden modificar con el tiempo para producir una representación más específica.
+    p.mb-5(data-aos="fade-left") Estas visualizaciones de datos en tiempo real son ahora un dispositivo de navegación fundamental para la mayoría de las empresas. Muchos factores están impulsando el crecimiento del mercado de #[i software] de análisis de datos, pero, en resumen: en la actualidad, apenas existe una empresa que pueda competir de manera efectiva sin la información de las herramientas de #[i software] de análisis de datos.
+
+    
+    .row.justify-content-center.align-items-center.mb-5
+      .col-12(data-aos="fade-right")
+        ul.lista-ul.mb-2
+          li.mb-0
+            i.fas.fa-play(style="color:#25FFFF")
+            | #[strong Cómo seleccionar herramientas de #[i software] de análisis de datos:]      
+        
+    .row.justify-content-center.align-items-center.mb-5(data-aos="fade-down-right")
+      .col-12.col-md-5.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        figure
+          img(src='@/assets/curso/temas/tema2/tema2-28.svg', alt='') 
+      .col-md-7.mb-4.mb-md-0.px-md-4
+        p Cualquiera que entienda el mercado de #[i software] de análisis de datos le dirá que seleccionar una solución de #[i software] de análisis de datos es complicado. Mucho. Es complejo porque el #[i software] es complejo y solo se vuelve más complejo con el tiempo. Y es complicado por cómo debe encajar en su negocio; Se debe sopesar cualquier cantidad de variables matizadas para que una herramienta de software de análisis de datos se adapte bien a su organización.
+        .row.justify-content-center.align-items-center.mb-5
+          .col-12(data-aos="fade-right")
+            ul.lista-ul.mb-2
+              li.mb-0
+                i.fas.fa-play(style="color:#7125C8")
+                | Principales Herramientas de #[i software] de análisis de datos:
+          .col-md-4(data-aos="fade-right")
+            ul.lista-ul.mb-2
+              li.mb-0
+                i.fas.fa-check(style="color:#7125C8")
+                | Tableau
+              li.mb-0
+                i.fas.fa-check(style="color:#7125C8")
+                | Microsoft
+              li.mb-0
+                i.fas.fa-check(style="color:#7125C8")
+                | Qlik
+              li.mb-0
+                i.fas.fa-check(style="color:#7125C8")
+                | ThoughtSpot
+          .col-md-4(data-aos="fade-right")
+            ul.lista-ul.mb-2
+              li.mb-0
+                i.fas.fa-check(style="color:#7125C8")
+                | MicroStrategy
+              li.mb-0
+                i.fas.fa-check(style="color:#7125C8")
+                | Sisense
+              li.mb-0
+                i.fas.fa-check(style="color:#7125C8")
+                | TIBCO
+              li.mb-0
+                i.fas.fa-check(style="color:#7125C8")
+                | SAS
+          .col-md-4(data-aos="fade-right")
+            ul.lista-ul.mb-2
+              li.mb-0
+                i.fas.fa-check(style="color:#7125C8")
+                | IBM
+              li.mb-0
+                i.fas.fa-check(style="color:#7125C8")
+                | SAP
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-md-11.col-lg-10.mb-4.mb-md-0(data-aos="fade-left")
+        .tarjeta.color-primario.p-3
+          .row.justify-content-around.align-items-center
+            .col-3.col-sm-2.col-lg-1
+              img(src="@/assets/curso/temas/pdf.svg")
+            .col
+              .row.justify-content-between.align-items-center
+                .col.mb-3.mb-sm-0
+                  p.text-small #[sttrong Para tener una idea más clara y profunda de esta temática], diríjase al Anexo 6 - Principales herramientas y #[i software] de análisis de datos 2021.
+                .col-sm-auto
+                  a.boton.color-acento-botones(:href="obtenerLink('/downloads/anexo_6_principales_herramientas_y_software_de_analisis_de_datos_2021.pdf')" target="_blank")
+                    span Descargar
+                    i.fas.fa-file-download
+                                                                                       
+
+                
 
 
 
