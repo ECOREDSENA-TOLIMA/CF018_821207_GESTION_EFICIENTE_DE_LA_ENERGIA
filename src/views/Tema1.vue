@@ -15,10 +15,10 @@
         :style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-01.png')})`}"
       )
       .bloque-texto-g__texto.p-4
-        p.mb-0 El procesamiento y el análisis de datos conllevan, anticipadamente, procedimientos de recopilación, limpieza y clasificación de estos, para luego llevar a cabo la transformación y el modelado de datos, bajo diferentes métodos tanto cualitativos como cuantitativos con el objetivo de descubrir la información requerida. 
+        p.mb-0 La probabilidad y la estadística son las ramas de las matemáticas relacionadas con las leyes que gobiernan los eventos aleatorios, incluida la recopilación, análisis, interpretación y visualización de datos numéricos. La probabilidad tiene su origen en el estudio del juego y los seguros en el siglo XVII, y ahora es una herramienta indispensable de las ciencias sociales y naturales.
           br
           br
-          | Los resultados así obtenidos se comunican, sugiriendo conclusiones y apoyando la toma de decisiones. La visualización de datos se utiliza, a veces, para representar los datos para facilitar el descubrimiento de patrones útiles en los datos. Los términos Modelado de datos y Análisis de datos significan lo mismo. 
+          | Se puede decir que las estadísticas tienen su origen en los censos realizados hace miles de años; Sin embargo, como disciplina científica distinta, se desarrolló a principios del siglo XIX como el estudio de poblaciones, economías y acciones morales y, más tarde en ese siglo, como herramienta matemática para analizar tales números.
 
   
     .row.justify-content-center.align-items-center.mb-5
@@ -47,7 +47,7 @@
 
       .row(titulo="Media aritmética (AM)")
         .col-md-12.mb-4.mb-md-0
-          p La media aritmética (o simplemente media) de una lista de números, es la suma de todos los números divididos por el número de números. De manera similar, la media de una muestra x1, x2, ..., xn, generalmente denotado por  es la suma de los valores muestreados dividida por el número de elementos de la muestra:
+          p La media aritmética (o simplemente media) de una lista de números, es la suma de todos los números divididos por el número de números. De manera similar, la media de una muestra x1, x2, ..., xn, generalmente denotado por #[em n] es la suma de los valores muestreados dividida por el número de elementos de la muestra:
           div.formulas.mb-3
             img(src='@/assets/curso/temas/tema1/tema1-03.svg', alt='')
           p Por ejemplo, la media aritmética de cinco valores: 4, 36, 45, 50, 75 es:
@@ -166,10 +166,10 @@
         p.mb-0 Al igual que la media y la mediana estadísticas, la moda es una forma de expresar, en un número (normalmente) único, información importante sobre una variable aleatoria o una población. El valor numérico de la moda es el mismo que el de la media y la mediana en una distribución normal y puede ser muy diferente en distribuciones muy asimétricas. La moda no es necesariamente única para una distribución discreta dada, ya que la función de masa de probabilidad puede tomar el mismo valor máximo en varios puntos x1 x2, etc. El caso más extremo ocurre en distribuciones uniformes, donde todos los valores ocurren con la misma frecuencia.
 
     .tarjeta.tarjeta--azul.p-4.mb-5(data-aos="fade-down-left")
-      SlyderA
+      SlyderA(tipo="b")
         .row.justify-content-center.align-items-center
           .col-md-6.mb-4.mb-md-0
-            p Cuando la función de densidad de probabilidad de una distribución continua tiene múltiples máximos locales, es común referirse a todos los máximos locales como modos de la distribución. Esta distribución continua se denomina multimodal (en contraposición a unimodal). Un modo de una distribución de probabilidad continua se considera a menudo como cualquier valor x en el que su función de densidad de probabilidad tiene un valor máximo localmente, por lo que cualquier pico es un modo.
+            p Cuando la función de densidad de probabilidad de una distribución continua tiene múltiples máximos locales, es común referirse a todos los máximos locales como modos de la distribución. Esta distribución continua se denomina multimoda (en contraposición a unimodal). Un modo de una distribución de probabilidad continua se considera a menudo como cualquier valor x en el que su función de densidad de probabilidad tiene un valor máximo localmente, por lo que cualquier pico es un modo.
           .col-md-6
             figure
               img(src='@/assets/curso/temas/tema1/tema1-22.svg', alt='')
@@ -181,7 +181,7 @@
             p En distribuciones unimodales simétricas, como la distribución normal, la media (si está definida), la mediana y la moda coinciden. Para las muestras, si se sabe que se extraen de una distribución unimodal simétrica, la media de la muestra se puede utilizar como una estimación de la moda poblacional.
         .row.justify-content-center.align-items-center
           .col-md-6.mb-4.mb-md-0
-            p #[strong Moda de una muestra:] La moda de una muestra es el elemento que aparece con mayor frecuencia en la colección. Por ejemplo, la moda de la muestra [1, 3, 6, 6, 6, 6, 7, 7, 12, 12, 17] es 6. Dada la lista de datos [1, 1, 2, 4, 4] su modo no es único. En tal caso, se dice que un conjunto de datos es bimodal, mientras que un conjunto con más de dos modos puede describirse como multimodal.
+            p #[strong Moda de una muestra:] La moda de una muestra es el elemento que aparece con mayor frecuencia en la colección. Por ejemplo, la moda de la muestra [1, 3, 6, 6, 6, 6, 7, 7, 12, 12, 17] es 6. Dada la lista de datos [1, 1, 2, 4, 4] su modo no es único. En tal caso, se dice que un conjunto de datos es bimodal, mientras que un conjunto con más de dos modos puede describirse como multimoda.
           .col-md-6
             figure
               img(src='@/assets/curso/temas/tema1/tema1-24.svg', alt='')
@@ -206,15 +206,15 @@
             i.fas.fa-play(style="color:#25FFFF")
             | Comparación de media, mediana y moda
 
-    p.mb-4(data-aos="fade-right") A diferencia de la media y la mediana, el concepto de moda también tiene sentido para los “datos nominales” (es decir, que no constan de valores numéricos en el caso de la media, ni siquiera de valores ordenados en el caso de la mediana). Por ejemplo, tomando una muestra de apellidos coreanos, uno podría encontrar que “Kim” aparece con más frecuencia que cualquier otro nombre. Entonces “Kim” sería la moda de la muestra. En cualquier sistema de votación donde una pluralidad determina la victoria, un único valor modal determinar al vencedor, mientras que un resultado multimodal requeriría algún procedimiento de desempate.  
+    p.mb-4(data-aos="fade-right") A diferencia de la media y la mediana, el concepto de moda también tiene sentido para los “datos nominales” (es decir, que no constan de valores numéricos en el caso de la media, ni siquiera de valores ordenados en el caso de la mediana). Por ejemplo, tomando una muestra de apellidos coreanos, uno podría encontrar que “Kim” aparece con más frecuencia que cualquier otro nombre. Entonces “Kim” sería la moda de la muestra. En cualquier sistema de votación donde una pluralidad determina la victoria, un único valor modal determinar al vencedor, mientras que un resultado multimoda requeriría algún procedimiento de desempate.  
 
     .row.justify-content-center.align-items-center.mb-4
       .col-12.col-lg-10(data-aos="fade-right")
         .titulo-sexto.color-acento-botones
-          p.titulo.pb-0.mb-0 #[b Figura 1.] #[i Diferencias entre mediana, media y moda] 
-          figure
-            img(src='@/assets/curso/temas/tema1/tema1-27.svg', alt='')  
-            figcaption Nota. Tomada de https://www.nobbot.com/educacion/no-te-quedes-en-la-media-y-aprende-a-calcular-la-mediana-asi-se-hace/
+          p.titulo.pb-0.mb-0 #[b Figura 1.] #[i Diferencias entre mediana, media y moda.] 
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-27.svg', alt='')  
+          figcaption.mt-2 Nota. Tomada de https://www.nobbot.com/educacion/no-te-quedes-en-la-media-y-aprende-a-calcular-la-mediana-asi-se-hace/
         
     .row.justify-content-center.align-items-center.mb-4
       .col-12(data-aos="fade-down-right")
@@ -222,9 +222,9 @@
           p A diferencia de la mediana, el concepto de moda tiene sentido para cualquier variable aleatoria que asuma valores de un espacio vectorial, incluidos los números reales (un espacio vectorial unidimensional) y los enteros (que pueden considerarse incrustados en los reales). Por ejemplo, una distribución de puntos en el plano normalmente tendrá una media y una moda, pero el concepto de mediana no se aplica. La mediana tiene sentido cuando existe un orden lineal en los valores posibles.
 
 
-    .tabla-b.color-acento-contenido.mb-5
-      .tabla-b__header
-        h5.mb-0 Las generalizaciones del concepto de mediana a espacios de dimensiones superiores son la mediana geométrica y el punto central.
+    .titulo-sexto.color-acento-contenido
+      p.titulo.pb-0.mb-0 #[b Tabla 1.] #[i Las generalizaciones del concepto de mediana a espacios de dimensiones superiores son la mediana geométrica y el punto central.] 
+    .tabla-a.color-acento-contenido.mb-5
       table
         thead
           tr(style="background-color: #7125C8;color: #FFFFFF;")
@@ -236,18 +236,18 @@
           tr
             th Media Aritmética
             td Suma de valores de un conjunto de datos dividida por el número de elementos o cantidad de números.
-            td (1 + 2 + 2 + 3 + 4 + 7 + 9) / 7
-            td 4
+            td.text-center (1 + 2 + 2 + 3 + 4 + 7 + 9) / 7
+            td.text-center 4
           tr
             th Mediana
             td Valor medio o central que separa las mitades menor y mayor de un conjunto de elementos numéricos.
-            td 1, 2, 2, 3, 4, 7, 9
-            td 3
+            td.text-center 1, 2, 2, 3, 4, 7, 9
+            td.text-center 3
           tr
             th Moda
             td Valor más frecuente en un conjunto de elementos numéricos.
-            td 1, 2, 2, 3, 4, 7, 9
-            td 2
+            td.text-center 1, 2, 2, 3, 4, 7, 9
+            td.text-center 2
 
     hr
 
@@ -390,7 +390,7 @@
               .h2.text-white 2
           .tarjeta.tarjeta--custom
             .p-4
-              p.mb-0 Por ejemplo, al comparar la acción A que tiene un rendimiento promedio del 7% con una desviación estándar del 10% contra la acción B, que tiene el mismo rendimiento promedio pero una desviación estándar del 50%, la primera acción sería claramente la opción más segura. dado que la desviación estándar de la acción B es significativamente mayor, para el mismo rendimiento exacto.
+              p.mb-0 Por ejemplo, al comparar la acción A que tiene un rendimiento promedio del 7% con una desviación estándar del 10% contra la acción B, que tiene el mismo rendimiento promedio, pero una desviación estándar del 50%, la primera acción sería claramente la opción más segura. Dado que la desviación estándar de la acción B es significativamente mayor, para el mismo rendimiento exacto.
       .col-md-11.col-12(data-aos="fade-down")
         .tarjeta-avatar-b.mb-4
           .color-secundario.pasos-custom.px-5
@@ -419,6 +419,8 @@
 
     .row.mb-5.justify-content-center.align-items-center
       .col-12.col-md-4.mb-5.mb-lg-0(data-aos="fade-right")
+        .titulo-sexto.color-acento-botones
+          p.titulo.pb-0.mb-0 #[b Figura 2.] #[i Ejemplo Variable continua.]
         figure
           img(src='@/assets/curso/temas/tema1/tema1-38.svg', alt='')  
       .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
@@ -447,20 +449,22 @@
 
     p.mb-5(data-aos="fade-right") En el siguiente recurso, se invita a descubrir todo sobre las distribuciones bidimensionales, diagramas de dispersión y rectas de regresión.
 
-    .row.mb-4.justify-content-center.align-items-center
-      .col-12.mb-5(data-aos="fade-right")
+    .row.mb-4.justify-content-center
+      .col-12.mb-3(data-aos="fade-right")
         ol.lista-ol--cuadro
           li 
             .lista-ol--cuadro__vineta
               span a
             | Distribuciones Bidimensionales
-      .col-12.col-md-4.mb-5(data-aos="fade-right")
-        figure
-          img(src='@/assets/curso/temas/tema1/tema1-41.svg', alt='')
-      .col-12.col-md-8.mb-5(data-aos="fade-right")
-        p En la estadística, a la distribución donde interceden dos variables, x e y, se le denomina distribución bidimensional, esto significa que a cada individuo le pertenecen dos valores, xi, yi. Y al momento de ser representados en un plano o diagrama cartesiano se les debe considerar como coordenadas de un solo punto (xi, yi). Así, toda esta distribución se visualizará como un conjunto de puntos y cada punto corresponde a un individuo de la distribución. 
+      .col-12.col-md-8.mb-4(data-aos="fade-right")
+        p.mb-4 En la estadística, a la distribución donde interceden dos variables, x e y, se le denomina distribución bidimensional, esto significa que a cada individuo le pertenecen dos valores, xi, yi. Y al momento de ser representados en un plano o diagrama cartesiano se les debe considerar como coordenadas de un solo punto (xi, yi). Así, toda esta distribución se visualizará como un conjunto de puntos y cada punto corresponde a un individuo de la distribución. 
         .cajon.color-acento-botones.p-4.mb-2
           p.mb-0 Como ejemplo típico de distribución bidimensional, se pueden tomar los errores de precisión del fuego de artillería. El error total se compone de dos desviaciones independientes: error en la distancia de disparo X y desviación lateral Y de la dirección de disparo. Un número tan relativamente pequeño de puntos clasifica esta distribución entre las distribuciones discretas. 
+      .col-12.col-md-4.mb-5(data-aos="fade-right")
+        .titulo-sexto.color-acento-botones
+          p.titulo.pb-0.mb-0.text-small #[b Figura 3.] #[i Ejemplo Distribuciones Bidimensionales.]
+        figure
+          img(src='@/assets/curso/temas/tema1/tema1-41.svg', alt='')
       
       .col-12.mt-4.mb-0(data-aos="fade-right")
         ol.lista-ol--cuadro
@@ -468,9 +472,9 @@
             .lista-ol--cuadro__vineta
               span b
             | Correlación
-      .col-12.col-md-8.mb-5(data-aos="fade-right")
+      .col-12.col-md-8.mb-4(data-aos="fade-right")
         p La correlación es una medida estadística que indica la relación lineal entre dos variables. No implica una relación de causa y efecto, sino que cuantifica la fuerza de la relación. Se utiliza un coeficiente de correlación, r, para medir la correlación. Además, se pueden realizar pruebas estadísticas para determinar la significancia de la correlación. Sin embargo, la correlación tiene limitaciones, ya que no puede tener en cuenta otras variables que puedan influir en la relación entre las dos variables analizadas. 
-      .col-12.col-md-4.mb-5(data-aos="fade-right")
+      .col-12.col-md-4.mb-4(data-aos="fade-right")
         figure
           img(src='@/assets/curso/temas/tema1/tema1-42.png', alt='')
           
@@ -497,10 +501,10 @@
     .row.justify-content-center.align-items-center.mb-5
       .col-12.col-lg-10(data-aos="fade-right")
         .titulo-sexto.color-acento-botones
-          p.titulo.pb-0.mb-0 #[b Figura 2.] #[i a. Correlación débil, b. Correlación fuerte, c. correlación inversa] 
+          p.titulo.pb-0.mb-0 #[b Figura 4.] #[i a. Correlación débil, b. Correlación fuerte, c. correlación inversa] 
         figure
           img(src='@/assets/curso/temas/tema1/tema1-44.svg', alt='')  
-          figcaption Nota. Tomada de https://www.monografias.com/trabajos82/regresion-y-correlacion-lineal/regresion-y-correlacion-lineal2.shtml
+          figcaption.mt-2 Nota. Tomada de https://www.monografias.com/trabajos82/regresion-y-correlacion-lineal/regresion-y-correlacion-lineal2.shtml
         
 
     .row.justify-content-center.align-items-center.mb-3
@@ -525,7 +529,7 @@
           .col-6
             div.formulas.mb-3
               img(src='@/assets/curso/temas/tema1/tema1-39.svg', alt='')
-        p En el caso de una correlación positiva, los puntos graficados se distribuyen desde la esquina inferior izquierda a la esquina superior derecha (en el patrón general de estar distribuidos uniformemente sobre una línea recta con una pendiente positiva), y en el caso de una correlación negativa, los puntos trazados se extienden sobre una línea recta de una pendiente negativa) desde la parte superior izquierda hacia la parte inferior derecha.
+        p En el caso de una correlación positiva, los puntos graficados se distribuyen desde la esquina inferior izquierda a la esquina superior derecha (en el patrón general de estar distribuidos uniformemente sobre una línea recta con una pendiente positiva), y en el caso de una correlación negativa, los puntos trazados se extienden sobre una línea recta de una pendiente negativa desde la parte superior izquierda hacia la parte inferior derecha.
       .col-md.tarjeta.tarjeta--azul.px-5.py-3
         .row.justify-content-center.mb-4
           .col-6
@@ -556,6 +560,8 @@
           
     .row.justify-content-center.align-items-center.mb-5
       .col-12.col-lg-10(data-aos="fade-right")
+        .titulo-sexto.color-acento-botones
+          p.titulo.pb-0.mb-0 #[b Figura 5.] #[i Ejemplo función de regresión.] 
         figure
           img(src='@/assets/curso/temas/tema1/tema1-47.svg', alt='')  
 
@@ -582,8 +588,11 @@
           .tarjeta.tarjeta--custom
             .p-4
               p.mb-0 Las rectas de regresión son líneas que se utiliza para describir el comportamiento de un conjunto de datos. En otras palabras, da la mejor tendencia de los datos proporcionados. Las rectas de regresión son útiles en los procedimientos de pronóstico. Su propósito es describir la interrelación de la variable dependiente (variable y) con una o muchas variables independientes (variable x).
+              .titulo-sexto.color-acento-botones.mt-3
+                p.titulo.pb-0.mb-0 #[b Figura 6.] #[i Ejemplo rectas de regresión.] 
               figure
                 img(src='@/assets/curso/temas/tema1/tema1-48.svg', alt='') 
+                figcaption.mt-2 Fuente.  http://halweb.uc3m.es/esp/Personal/personas/aarribas/esp/docs/estII/tema4esp(2).pdf
       .col-12(data-aos="fade-down")
         .tarjeta-avatar-b.mb-4
           .color-primario.pasos-custom.px-5
@@ -676,6 +685,9 @@
 
 
     .row.justify-content-center.align-items-center.mb-5
+      .px-3.mb-0
+        .titulo-sexto.color-acento-botones.mt-3
+          p.titulo.pb-0.mb-0 #[b Figura 7.] #[i Ejemplo distribución discreta.] 
       .col-12.col-md-6.mb-3(data-aos="fade-right")
         figure
           img(src='@/assets/curso/temas/tema1/tema1-50.svg', alt='') 
@@ -821,7 +833,7 @@
     .row.justify-content-center.align-items-center.mb-5
       .col-12.col-lg-10(data-aos="fade-right")
         .titulo-sexto.color-acento-botones
-          p.titulo.pb-0.mb-0 #[b Figura 3.] #[i Distribuciones continuas] 
+          p.titulo.pb-0.mb-0 #[b Figura 8.] #[i Distribuciones continuas.] 
         figure
           img(src='@/assets/curso/temas/tema1/tema1-70.svg', alt='')  
           figcaption Nota. Tomada de: https://slideplayer.es/amp/1025784/
@@ -874,7 +886,7 @@
     .row.justify-content-center.align-items-center.mb-5
       .col-12.col-lg-10(data-aos="fade-right")
         .titulo-sexto.color-acento-botones
-          p.titulo.pb-0.mb-0 #[b Figura 4.] #[i Distribución normal] 
+          p.titulo.pb-0.mb-0 #[b Figura 9.] #[i Distribución normal.] 
         figure
           img(src='@/assets/curso/temas/tema1/tema1-73.svg', alt='')  
           figcaption Nota. Tomada de http://matepedia-estadistica.blogspot.com/2016/09/caracteristicas-de-una-distribucion.html
@@ -883,7 +895,7 @@
       .row.m-0.align-items-center.justify-content-between
         .col-lg-12
           .bloque-texto-a__texto.p-4
-            p Cualquier combinación lineal de una colección fija de desviaciones normales es una desviación normal. Muchos resultados y métodos, como la propagación de la incertidumbre y el ajuste de parámetros por mínimos cuadrados, pueden derivarse analíticamente de forma explícita cuando las variables relevantes se distribuyen normalmente. Una distribución normal a veces se denomina informalmente curva de campana. Sin embargo, muchas otras distribuciones tienen forma de campana (como las distribuciones de Cauchy, de Student y logística).
+            p Cualquier combinación lineal de una colección fija de desviaciones normales es una desviación normal. Muchos resultados y métodos, como la propagación de la incertidumbre y el ajuste de parámetros por mínimos cuadrados, pueden derivarse analíticamente de forma explícita cuando las variables relevantes se distribuyen normalmente. Una distribución normal a veces se denomina informalmente curva de campana. Sin embargo, muchas otras distribuciones tienen forma de campana (como las distribuciones de #[em Cauchy], de #[em Student] y logística).
 
 
     Separador
@@ -1018,7 +1030,7 @@
         p Por las propiedades de las medias y las varianzas de las variables aleatorias, la media y la varianza de la media muestral son las siguientes:
         div.formulas.mb-3
           img(src='@/assets/curso/temas/tema1/tema1-90.svg', alt='')
-        p Aunque la media de la distribución de  es idéntica a la media de la distribución de la población, la varianza es mucho menor para tamaños de muestra grandes.
+        p Aunque la media de la distribución de μ es idéntica a la media de la distribución de la población, la varianza es mucho menor para tamaños de muestra grandes.
         
           
     .row.mb-5.align-self-stretch.justify-content-center
@@ -1032,7 +1044,7 @@
         .row.justify-content-center.align-items-center.mb-5
           .col-12.col-lg-11(data-aos="fade-right")
             .titulo-sexto.color-acento-botones
-              p.titulo.pb-0.mb-0 #[b Figura 5.] #[i Distribución de medias muestrales] 
+              p.titulo.pb-0.mb-0 #[b Figura 10.] #[i Distribución de medias muestrales.] 
             figure
               img(src='@/assets/curso/temas/tema1/tema1-92.svg', alt='')  
               figcaption.text-small Nota. Tomada de http://virtual.umng.edu.co/distancia/ecosistema/odin/odin_desktop.php?path=Li4vb3Zhcy9pbmdlbmllcmlhX2luZHVzdHJpYWwvZXN0YWRpc3RpY2FfaWkvdW5pZGFkXzEv#slide_2
@@ -1062,7 +1074,7 @@
         div.formulas.mb-3
           img(src='@/assets/curso/temas/tema1/tema1-95.svg', alt='')
         p es N (0,1) en el límite cuando n se acerca al infinito.
-        p Esto significa que la variable  se distribuye
+        p Esto significa que la variable σ se distribuye
         div.formulas.mb-3
           img(src='@/assets/curso/temas/tema1/tema1-96.svg', alt='')
         p Una aplicación bien conocida de este teorema es la aproximación normal a la distribución binomial.
@@ -1074,7 +1086,7 @@
     .row.justify-content-center.align-items-center.mb-4
       .col-12.col-lg-10(data-aos="fade-right")
         .titulo-sexto.color-acento-botones
-          p.titulo.pb-0.mb-0 #[b Figura 6.] #[i Teorema del Límite central] 
+          p.titulo.pb-0.mb-0 #[b Figura 11.] #[i Teorema del Límite central.] 
         figure
           img(src='@/assets/curso/temas/tema1/tema1-97.svg', alt='')  
           figcaption Nota. Tomada de  http://virtual.umng.edu.co/distancia/ecosistema/odin/odin_desktop.php?path=Li4vb3Zhcy9pbmdlbmllcmlhX2luZHVzdHJpYWwvZXN0YWRpc3RpY2FfaWkvdW5pZGFkXzEv#slide_3
@@ -1119,9 +1131,10 @@
         ul.lista-ul.mb-2
           li
             i.lista-ul__vineta(style="color:#AD84FF")
-            | Como siempre, una puntuación Z positiva indica una media muestral mayor que μ y una puntuación Z negativa corresponde a una media muestral menor que μ.
+            | Debe darse cuenta de que la media de una muestra individual probablemente no será idéntica a la media de su población; es decir, habrá algún “error” entre X y μ. Algunas medias de muestra estarán relativamente cerca de μ y otras relativamente lejos. El error estándar proporciona una medida de la distancia estándar entre X y μ.
+            //Como siempre, una puntuación Z positiva indica una media muestral mayor que μ y una puntuación Z negativa corresponde a una media muestral menor que μ.
       .col-12.text-center.py-3(data-aos="fade-left")
-        h5 El valor numérico de la puntuación Z indica la distancia entre  y μ medida en términos del error estándar.
+        h5 El valor numérico de la puntuación Z indica la distancia entre X y μ medida en términos del error estándar.
         
 
     Separador
@@ -1428,9 +1441,9 @@
         p.mb-0 Dos o más eventos son compatibles, si pueden cumplirse simultáneamente; es decir, si tienen al menos un resultado común. Por el contrario, son incompatibles o mutuamente excluyentes y su intersección es el conjunto vacío Ø si se analiza el siguiente experimento de lanzar un dado. 
 
 
-    .row.mb-5.align-self-stretch.justify-content-center
+    .row.mb-4.align-self-stretch.justify-content-center
       .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")
-        p Comencemos con el siguiente experimento: tiramos un dado de seis caras y vemos cuál es el resultado. Consideremos los siguientes eventos A= {2, 3}, B= {1,2}, C= {5}.
+        p #[b Comencemos con el siguiente experimento:] tiramos un dado de seis caras y vemos cuál es el resultado. Consideremos los siguientes eventos A= {2, 3}, B= {1,2}, C= {5}.
         p Observamos que, si extraemos 2, luego A está satisfecho, así como B. Decimos que los eventos son compatibles, esto significa que pueden ocurrir simultáneamente. Por el contrario, los eventos B y C son incompatibles, ya que los dos no pueden suceder simultáneamente.
         .cajon.color-acento-contenido.p-4.mb-2
           p.mb-0 Para ver cuando dos eventos son compatibles o no, podemos observar que A y B tienen un elemento común: 2, por lo tanto, serán compatibles. De lo contrario, A y C no tienen ningún elemento común y, por tanto, son incompatibles. Expresamos esto diciendo que dos eventos A y B son compatibles si:
@@ -1439,18 +1452,12 @@
         p y, por el contrario, son incompatibles si:
         div.formulas.mb-3
           img(src='@/assets/curso/temas/tema1/tema1-120.svg', alt='')
-        p Si tenemos tres o más eventos, decimos que son incompatibles de dos en dos si dos eventos son incompatibles (de manera similar, son compatibles de dos en dos si dos eventos son compatibles). En nuestro caso A, B y C no son incompatibles de dos en dos, ya que, aunque A y C, al igual que B y C son incompatibles, A y B son compatibles.
       .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
         figure
           img(src='@/assets/curso/temas/tema1/tema1-118.svg', alt='')  
+        
+    p.mb-4(data-aos="fade-down") Si tenemos tres o más eventos, decimos que son incompatibles de dos en dos si dos eventos son incompatibles (de manera similar, son compatibles de dos en dos si dos eventos son compatibles). En nuestro caso A, B y C no son incompatibles de dos en dos, ya que, aunque A y C, al igual que B y C son incompatibles, A y B son compatibles.
 
-    .bloque-texto-a.color-secundario.p-3.mb-5(data-aos="fade-down-right") 
-      .row.m-0.align-items-center.justify-content-between
-        .col-lg-12
-          .bloque-texto-a__texto.p-3
-            h5 Probabilidad de sucesos compatibles e incompatibles
-            p Dos o más eventos son compatibles, si pueden cumplirse simultáneamente; es decir, si tienen al menos un resultado común. Por el contrario, son incompatibles o mutuamente excluyentes y su intersección es el conjunto vacío Ø. Si volvemos a centrarnos en el experimento de lanzar un dado.
-    
     .row.mb-5.align-self-stretch.justify-content-center
       .col-12(data-aos="fade-left")
         .cajon.color-acento-botones.p-4.mb-2
@@ -1461,10 +1468,14 @@
     .tarjeta--container.row.mb-5(data-aos="fade-down-right")
       .col-md.tarjeta.tarjeta--azul.px-5.py-3
         h5 Evento compatible
+        .titulo-sexto.color-acento-botones
+          p.titulo.pb-0.mb-0 #[b Figura 12.] #[i Eventos.] 
         div.formulas.mb-3
           img(src='@/assets/curso/temas/tema1/tema1-121.svg', alt='')
       .col-md.tarjeta.tarjeta--gris.px-5.py-3
         h5 Evento incompatible
+        .titulo-sexto.color-acento-botones
+          p.titulo.pb-0.mb-0 #[b Figura 13.] #[i Evento incompatible.] 
         div.formulas.mb-3
           img(src='@/assets/curso/temas/tema1/tema1-122.svg', alt='')
       
@@ -1628,6 +1639,8 @@
 
     .row.mb-5.align-self-stretch.justify-content-center.align-items-center
       .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")
+        .titulo-sexto.color-acento-botones
+          p.titulo.pb-0.mb-0 #[b Figura 14.] #[i Ejemplo Probabilidad condicionada.] 
         figure
           img(src='@/assets/curso/temas/tema1/tema1-146.svg', alt='') 
       .col-12.col-md-8.mb-5.mb-lg-0(data-aos="fade-left")

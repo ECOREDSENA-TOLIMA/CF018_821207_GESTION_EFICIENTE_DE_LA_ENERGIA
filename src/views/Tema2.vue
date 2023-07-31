@@ -12,7 +12,7 @@
         :style="{'background-image': `url(${require('@/assets/curso/temas/tema2/tema2-01.png')})`}"
       )
       .bloque-texto-g__texto.p-4 
-        p.mb-0 Después de la recolección de datos, limpieza inicial y clasificación de los mismos se sigue un conjunto de procedimientos para obtener los datos / información deseados del trabajo de campo que se desea ejecutar, para procesar, graficar y analizar los hechos de manera lógica y científica.
+        p.mb-0 Después de la recolección de datos, limpieza inicial y clasificación de los mismos, se sigue un conjunto de procedimientos para obtener los datos / información deseados del trabajo de campo que se desea ejecutar, para procesar, graficar y analizar los hechos de manera lógica y científica.
 
     Separador
     #t_2_1.titulo-segundo.color-acento-botones(data-aos="fade-right")
@@ -163,7 +163,7 @@
 
 
     .tarjeta.tarjeta--azul.p-4.mb-5(data-aos="fade-down-left")
-      SlyderA
+      SlyderA(tipo="b")
         .row.justify-content-center.align-items-center
           .col-md-7.mb-4.mb-md-0
             h4 Tipos de gráficas para el análisis de datos
@@ -499,7 +499,7 @@
 
     Separador
     #t_2_4.titulo-segundo.color-acento-botones(data-aos="fade-right")
-      h2 2.4 Herramientas #[strong software] más conocidas para procesar, graficar y analizar datos
+      h2 2.4 Herramientas #[strong #[em software]] más conocidas para procesar, graficar y analizar datos
 
     p.mb-5(data-aos="fade-left") A continuación, encontrará las herramientas necesarias para procesar, graficar y analizar los datos:
 
@@ -532,7 +532,7 @@
         figure
           img(src='@/assets/curso/temas/tema2/tema2-28.svg', alt='') 
       .col-md-7.mb-4.mb-md-0.px-md-4
-        p Cualquiera que entienda el mercado de #[i software] de análisis de datos le dirá que seleccionar una solución de #[i software] de análisis de datos es complicado. Mucho. Es complejo porque el #[i software] es complejo y solo se vuelve más complejo con el tiempo. Y es complicado por cómo debe encajar en su negocio; Se debe sopesar cualquier cantidad de variables matizadas para que una herramienta de software de análisis de datos se adapte bien a su organización.
+        p Cualquiera que entienda el mercado de #[i software] de análisis de datos le dirá que seleccionar una solución de #[i software] de análisis de datos es complicado. Mucho. Es complejo porque el #[i software] es complejo y solo se vuelve más complejo con el tiempo. Y es complicado por cómo debe encajar en su negocio; Se debe sopesar cualquier cantidad de variables matizadas para que una herramienta de #[em software] de análisis de datos se adapte bien a su organización.
         .row.justify-content-center.align-items-center.mb-5
           .col-12(data-aos="fade-right")
             ul.lista-ul.mb-2
