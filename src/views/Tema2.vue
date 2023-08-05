@@ -480,7 +480,7 @@
                 li.mb-0.text-small
                   i.fas.fa-check(style="color:#25FFFF")
                   | Gráfico de columnas
-          .row(numero="6" titulo="Comprensión de las relaciones en diferentes tipos de visualización de datos")
+          .row(numero="5" titulo="Comprensión de las relaciones en diferentes tipos de visualización de datos")
             .col-12.mb-4.mb-md-0
               p.text-small A veces, la mejor manera de comprender una variable dada es ver cómo se relaciona con una o varias otras variables. Por ejemplo, una variable podría tener un efecto positivo o negativo en otra. Puede utilizar estos tipos de gráficos para representar visualmente la relación entre las cosas:
               ul.lista-ul.mb-2

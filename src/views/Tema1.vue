@@ -258,12 +258,12 @@
             i.fas.fa-play(style="color:#25FFFF")
             | Varianza y desviación típica o estándar
 
-    .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade-down-right")
-      .bloque-texto-g__img(
-        :style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-28.png')})`}"
-      )
-      .bloque-texto-g__texto.p-4
-        p.mb-0 La varianza es la expectativa de la desviación al cuadrado de una variable aleatoria de su media poblacional o muestral. La varianza es una medida de dispersión, lo que significa que es una medida de qué tan lejos se separa un conjunto de números de su valor promedio y se define de manera detallada así:
+    //- .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade-down-right")
+    //-   .bloque-texto-g__img(
+    //-     :style="{'background-image': `url(${require('@/assets/curso/temas/tema1/tema1-28.png')})`}"
+    //-   )
+    //-   .bloque-texto-g__texto.p-4
+    //-     p.mb-0 La varianza es la expectativa de la desviación al cuadrado de una variable aleatoria de su media poblacional o muestral. La varianza es una medida de dispersión, lo que significa que es una medida de qué tan lejos se separa un conjunto de números de su valor promedio y se define de manera detallada así:
 
 
     .row.justify-content-center.align-items-center.mb-5
