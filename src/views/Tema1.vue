@@ -565,7 +565,7 @@
         figure
           img(src='@/assets/curso/temas/tema1/tema1-47.svg', alt='')  
 
-    p.mb-3(data-aos="fade-right") El #[i software] no es solo para buscar filtros de caras divertidas o aprender nuevos movimientos de baile. Puede ayudar a su equipo a aumentar su eficiencia y ser más productivo y capaz en su trabajo. Una solución de #[i software] personalizada puede ayudar a eliminar el cuello de botella del seguimiento de los recibos y gastos del personal, o puede facilitar que su equipo administre los contactos de marketing.
+    p.mb-3(data-aos="fade-right") El #[i software] no es solo para buscar filtros de caras divertidas o aprender nuevos movimientos de baile. Puede ayudar a su equipo a aumentar su eficiencia y ser más productivo y capaz en su trabajo. Una solución de #[i software] personalizada puede ayudar a eliminar el cuello de botella del seguimiento de los recibos y gastos del personal, o puede facilitar que su equipo administre los contactos de #[i marketing].
     p.mb-5(data-aos="fade-right") Y el #[i software] personalizado también puede servir como una solución para sus clientes. Por ejemplo, una opción de chat en vivo en su sitio web proporciona un contacto inmediato para clientes o prospectos con una necesidad urgente o que están listos para realizar una compra. Un #[i software] personalizado también podría ayudar a sus clientes a rastrear a su representante de servicio en el camino a su hogar, o enviar una solicitud de soporte técnico.
 
 
@@ -942,13 +942,13 @@
                 | Los tipos de muestreo incluyen muestreo aleatorio, muestreo por bloques, muestreo por juicio y muestreo sistemático.  
               li
                 i.lista-ul__vineta(style="color:#AD84FF")
-                | Las empresas utilizan el muestreo como una herramienta de marketing para identificar las necesidades y deseos de su mercado objetivo. 
+                | Las empresas utilizan el muestreo como una herramienta de #[i marketing] para identificar las necesidades y deseos de su mercado objetivo. 
           .col-md-7
             figure
               img(src='@/assets/curso/temas/tema1/tema1-78.png', alt='')
         .row
           .col-md-5.mb-4.mb-md-0
-            p En auditorías financieras, los contadores públicos certificados utilizan el muestreo de auditoría para evaluar la precisión de los saldos de cuentas en los estados financieros. Este método se utiliza cuando la población de transacciones es grande. Además, los gerentes empresariales emplean el muestreo de clientes para evaluar la demanda de nuevos productos y el éxito del marketing. El muestreo es una herramienta útil en la toma de decisiones y evaluación de datos. 
+            p En auditorías financieras, los contadores públicos certificados utilizan el muestreo de auditoría para evaluar la precisión de los saldos de cuentas en los estados financieros. Este método se utiliza cuando la población de transacciones es grande. Además, los gerentes empresariales emplean el muestreo de clientes para evaluar la demanda de nuevos productos y el éxito del #[i marketing]. El muestreo es una herramienta útil en la toma de decisiones y evaluación de datos. 
           .col-md-7
             figure
               img(src='@/assets/curso/temas/tema1/tema1-79.png', alt='')
@@ -1005,7 +1005,7 @@
                     img(src='@/assets/curso/temas/tema1/tema1-87.svg', alt='')
                 .col 
                   p.text-small Por lo tanto, el auditor selecciona una de cada cinco verificaciones para probarlas. Suponiendo que no se encuentran errores en el trabajo de prueba de muestreo, el análisis estadístico le da al auditor una tasa de confianza del 95% de que el procedimiento de verificación se realizó correctamente. El auditor prueba la muestra de 60 cheques y no encuentra errores, por lo que concluye que el control interno sobre el efectivo está funcionando correctamente.
-          .row(numero="5" titulo="Ejemplo de muestreo de marketing")
+          .row(numero="5" titulo="Ejemplo de muestreo de <i>marketing</i>")
             .col-12.mb-4.mb-md-0
               p.text-small Las empresas tienen como objetivo vender sus productos y / o servicios a los mercados objetivo. Antes de presentar productos al mercado, las empresas generalmente identifican las necesidades y deseos de su público objetivo. Para hacerlo, pueden emplear un muestreo de la población del mercado objetivo para obtener una mejor comprensión de esas necesidades para luego crear un producto y / o servicio que satisfaga esas necesidades. En este caso, recoger las opiniones de la muestra ayuda a identificar las necesidades del conjunto.
       .col-12.col-md-4.mb-5.mb-lg-0.d-none.d-sm-none.d-md-block(data-aos="fade-right")

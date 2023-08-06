@@ -208,7 +208,7 @@
     .row.justify-content-center.align-items-center.mb-5
       .col-12.mb-4.mb-md-0(data-aos="fade-down-right")
         .cajon.color-acento-botones.p-4.mb-2
-          p Desde las métricas del sitio web y el desempeño del equipo de ventas hasta los resultados de las campañas de marketing y las tasas de adopción de productos, existe una variedad de puntos de datos que su organización necesita rastrear. Cuando se tienen las manos ocupadas haciendo malabares con varios proyectos a la vez, se necesita un método de informes rápido y eficaz que le permita expresar un punto claro. ¿Se sabe qué tipo de método de visualización de datos utilizar?
+          p Desde las métricas del sitio web y el desempeño del equipo de ventas hasta los resultados de las campañas de #[i marketing] y las tasas de adopción de productos, existe una variedad de puntos de datos que su organización necesita rastrear. Cuando se tienen las manos ocupadas haciendo malabares con varios proyectos a la vez, se necesita un método de informes rápido y eficaz que le permita expresar un punto claro. ¿Se sabe qué tipo de método de visualización de datos utilizar?
       
     p.mb-5(data-aos="fade-right") Algunos de los tipos más comunes de gráficos y gráficos de visualización de datos incluyen:
 
@@ -287,7 +287,7 @@
           p Un gráfico de columnas incluirá etiquetas de datos a lo largo del eje horizontal (X) con métricas o valores medidos presentados en el eje vertical (Y), también conocido como el lado izquierdo del gráfico. El eje Y normalmente comenzará en 0 y llegará tan alto como la medida más grande que está rastreando.
         .col-md-5
           figure
-            img(src='@/assets/curso/temas/tema2/tema2-15.png', alt='')
+            img(src='@/assets/curso/temas/tema2/tema2-15.svg', alt='')
         .col-12.mt-3
           p Puede utilizar gráficos de columnas para realizar un seguimiento de las cifras de ventas mensuales, los ingresos por página de destino o medidas similares. Los colores consistentes ayudan a mantener el enfoque en los datos en sí, aunque puede introducir colores de acento para enfatizar puntos de datos importantes o para realizar un seguimiento de los cambios a lo largo del tiempo.
       .row(titulo="Gráfico de barras")
@@ -306,14 +306,14 @@
           p En este caso, sus etiquetas de datos irán a lo largo del eje Y, mientras que las medidas estarán a lo largo del eje X. 
         .col-md-5
           figure
-            img(src='@/assets/curso/temas/tema2/tema2-16.png', alt='')
+            img(src='@/assets/curso/temas/tema2/tema2-16.svg', alt='')
       .row(titulo="Gráfico de barras apiladas")
         .col-md-7.mb-4.mb-md-0
           p ¿Está comparando muchos elementos diferentes? ¿Desea realizar un seguimiento del crecimiento individual de cada conjunto de datos en sí, junto con el crecimiento del grupo como un todo colectivo? Para revelar esta relación de parte a todo, se creará un gráfico de barras apiladas. 
           p Al eliminar el color de este gráfico, se vería similar a un gráfico de barras estándar. El diseño “apilado” representa la combinación de colores contrastantes de este gráfico. Estos colores se asignan a una leyenda que acompaña a su mapa.
         .col-md-5
           figure
-            img(src='@/assets/curso/temas/tema2/tema2-17.png', alt='')
+            img(src='@/assets/curso/temas/tema2/tema2-17.svg', alt='')
         .col-12.mt-3
           p Por ejemplo, es posible que desee realizar un seguimiento del rendimiento de cuatro tipos diferentes de productos en cinco estrategias de ventas diferentes. La estrategia 1 a la estrategia 5 estará en su eje X, mientras que las cifras de ventas estarán en el eje Y.
           .cajon.color-acento-contenido.p-4.mb-2
@@ -325,30 +325,30 @@
           p Se deben usar líneas continuas y evite trazar más de cuatro líneas, ya que cualquier cosa por encima de esto puede distraer; además, hay que  planificar el espacio suficiente para que tus líneas midan alrededor de 2/3 de la altura del eje Y.
         .col-md-5
           figure
-            img(src='@/assets/curso/temas/tema2/tema2-18.png', alt='')
+            img(src='@/assets/curso/temas/tema2/tema2-18.svg', alt='')
       .row(titulo="Gráfico de doble eje")
         .col-md-7.mb-4.mb-md-0
           p Este tipo de gráfico se utiliza para presentar la relación entre dos variables. Más específicamente, estos gráficos son útiles para demostrar la relación entre dos o más medidas con diferente amplitud y escala. Los gráficos de doble eje ayudan a presentar mucha información en el espacio limitado presente en su tablero y también le permiten comprender las tendencias que, de lo contrario, podría haber perdido.
         .col-md-5
           figure
-            img(src='@/assets/curso/temas/tema2/tema2-19.png', alt='')
+            img(src='@/assets/curso/temas/tema2/tema2-19.svg', alt='')
       .row(titulo="Gráfico Mekko")
         .col-md-7.mb-4.mb-md-0
           p Este es un gráfico con el que podría estar menos familiarizado, a menos que se encuentre en el espacio de análisis de datos. Un gráfico de Mekko tiene un diseño similar a un gráfico de barras apiladas, con una excepción importante: en lugar de seguir la progresión del tiempo, el eje X mide otra dimensión de sus conjuntos de datos. 
           p Con este diseño, puede comparar valores, medir la composición de cada valor y analizar la distribución de datos, todo al mismo tiempo. 
         .col-md-5
           figure
-            img(src='@/assets/curso/temas/tema2/tema2-20.png', alt='')
+            img(src='@/assets/curso/temas/tema2/tema2-20.svg', alt='')
       .row(titulo="Gráfico circular")
         .col-md-7.mb-4.mb-md-0
-          p Un gráfico circular representa un número estático, dividido en categorías que constituyen sus porciones individuales; este representará cantidades numéricas en porcentajes. Cuando sume todas las porciones separadas, deberían sumar el 100%. Estos son especialmente útiles en marketing digital, ya que puede usarlos para mostrar un desglose de:
+          p Un gráfico circular representa un número estático, dividido en categorías que constituyen sus porciones individuales; este representará cantidades numéricas en porcentajes. Cuando sume todas las porciones separadas, deberían sumar el 100%. Estos son especialmente útiles en #[i marketing] digital, ya que puede usarlos para mostrar un desglose de:
           ul.lista-ul.mb-2
             li.mb-0
               i.fas.fa-check(style="color:#25FFFF")
               | Cuotas de mercado.
             li.mb-0
               i.fas.fa-check(style="color:#25FFFF")
-              | Gastos de marketing.
+              | #[i Gastos de marketing.]
             li.mb-0
               i.fas.fa-check(style="color:#25FFFF")
               | Demografía del cliente.
@@ -357,12 +357,12 @@
               | Uso del dispositivo del cliente (para pruebas de UX).
             li.mb-0
               i.fas.fa-check(style="color:#25FFFF")
-              | Fuentes de tráfico online.
+              | Fuentes de tráfico #[i online].
           .cajon.color-acento-contenido.p-4.mb-2
             p Si se desea que su gráfico circular tenga mucha diferenciación entre los sectores, es mejor limitar la cantidad de categorías que ilustra.
         .col-md-5
           figure
-            img(src='@/assets/curso/temas/tema2/tema2-21.png', alt='')
+            img(src='@/assets/curso/temas/tema2/tema2-21.svg', alt='')
       .row(titulo="Diagrama de dispersión")
         .col-md-7.mb-4.mb-md-0
           p Este tipo de visualización también se denomina diagrama de dispersión y representa diferentes variables trazadas a lo largo de dos ejes. Tenga en cuenta que tanto el eje X como el eje Y son ejes de valor, ya que un gráfico de dispersión no utiliza un eje de categoría.
@@ -371,20 +371,20 @@
             p Digamos, por ejemplo, que desea medir las puntuaciones de los comentarios de los clientes que recibe su organización. También quería ver si los tiempos de respuesta de su mesa de servicio tienen algún impacto en esos puntajes. Los puntajes de retroalimentación varían de 0 a 10, por lo que esas serían sus medidas del eje Y. En su eje X, etiquetaría desde 0 hasta el tiempo de respuesta más largo permitido, como una hora. Luego, trazaría los puntajes que recibió, notando patrones y tendencias que pueden ayudarlo a informar sus esfuerzos de servicio. 
         .col-md-5
           figure
-            img(src='@/assets/curso/temas/tema2/tema2-22.png', alt='')
+            img(src='@/assets/curso/temas/tema2/tema2-22.svg', alt='')
       .row(titulo="Gráfico de burbujas")
         .col-md-7.mb-4.mb-md-0
           p Al igual que un gráfico de dispersión, un gráfico de burbujas también puede mostrar relaciones o distribución. En esta variación, sin embargo, reemplazará los puntos de datos con burbujas. También variará los tamaños de la burbuja para representar un tercer conjunto de datos.
           p Al igual que con un gráfico de dispersión, uno de burbujas no utiliza un eje de categorías. Más bien, trazará los conjuntos de datos como valores X, valores Y y ahora, valores Z (tamaño de burbuja). 
         .col-md-5
           figure
-            img(src='@/assets/curso/temas/tema2/tema2-23.png', alt='')
+            img(src='@/assets/curso/temas/tema2/tema2-23.svg', alt='')
       .row(titulo="Gráfico de viñetas")
         .col-md-7.mb-4.mb-md-0
           p Este tipo de gráfico puede ayudar a realizar un seguimiento visual de su progreso. Similar al diseño gráfico de barras, estos también incorporan otros elementos visuales. Al usar un gráfico de viñetas, comenzará con una medida principal, y luego comparará esa medida con otra (o múltiple) para encontrar un significado y una conexión más profundos. 
         .col-md-5
           figure
-            img(src='@/assets/curso/temas/tema2/tema2-24.png', alt='')
+            img(src='@/assets/curso/temas/tema2/tema2-24.svg', alt='')
 
     .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade-down-right")
       .bloque-texto-g__img(
@@ -425,7 +425,7 @@
                 p.text-small.mb-0 Cualquiera de estas técnicas de visualización le permite escanear grandes cantidades de datos y aún así derivar patrones relevantes e informativos de ellos.
           .row(numero="2" titulo="Mostrar composición")
             .col-12.mb-4.mb-md-0
-              p.text-small También es posible que deba dividir sus conjuntos de valores, mostrando cómo las unidades individuales afectan el panorama general. Por ejemplo, es posible que desee realizar un seguimiento del acceso móvil general en su sitio web por tipo de dispositivo o ubicación geográfica. O quizás desee saber qué elementos de su reciente campaña de marketing digital resultaron ser los más exitosos. En este caso, puede utilizar cualquiera de estos tipos de visualizaciones de datos:
+              p.text-small También es posible que deba dividir sus conjuntos de valores, mostrando cómo las unidades individuales afectan el panorama general. Por ejemplo, es posible que desee realizar un seguimiento del acceso móvil general en su sitio web por tipo de dispositivo o ubicación geográfica. O quizás desee saber qué elementos de su reciente campaña de #[i marketing] digital resultaron ser los más exitosos. En este caso, puede utilizar cualquiera de estos tipos de visualizaciones de datos:
               ul.lista-ul.mb-2
                 li.mb-0.text-small
                   i.fas.fa-check(style="color:#25FFFF")
