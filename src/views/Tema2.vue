@@ -543,38 +543,38 @@
             ul.lista-ul.mb-2
               li.mb-0
                 i.fas.fa-check(style="color:#7125C8")
-                | Tableau
+                | #[i Tableau]
               li.mb-0
                 i.fas.fa-check(style="color:#7125C8")
-                | Microsoft
+                | #[i Microsoft]
               li.mb-0
                 i.fas.fa-check(style="color:#7125C8")
-                | Qlik
+                | #[i Qlik]
               li.mb-0
                 i.fas.fa-check(style="color:#7125C8")
-                | ThoughtSpot
+                | #[i ThoughtSpot]
           .col-md-4(data-aos="fade-right")
             ul.lista-ul.mb-2
               li.mb-0
                 i.fas.fa-check(style="color:#7125C8")
-                | MicroStrategy
+                | #[i MicroStrategy]
               li.mb-0
                 i.fas.fa-check(style="color:#7125C8")
-                | Sisense
+                | #[i Sisense]
               li.mb-0
                 i.fas.fa-check(style="color:#7125C8")
-                | TIBCO
+                | #[i TIBCO]
               li.mb-0
                 i.fas.fa-check(style="color:#7125C8")
-                | SAS
+                | #[i SAS]
           .col-md-4(data-aos="fade-right")
             ul.lista-ul.mb-2
               li.mb-0
                 i.fas.fa-check(style="color:#7125C8")
-                | IBM
+                | #[i IBM]
               li.mb-0
                 i.fas.fa-check(style="color:#7125C8")
-                | SAP
+                | #[i SAP]
 
     .row.justify-content-center.align-items-center.mb-5
       .col-md-11.col-lg-10.mb-4.mb-md-0(data-aos="fade-left")

@@ -80,7 +80,7 @@ export default {
           },
           {
             numero: '1.9',
-            titulo: 'Combinatoria: Variaciones, permutaciones y combinaciones',
+            titulo: 'Combinatoria: variaciones, permutaciones y combinaciones',
             hash: 't_1_9',
           },
         ],

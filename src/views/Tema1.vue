@@ -169,7 +169,7 @@
       SlyderA(tipo="b")
         .row.justify-content-center.align-items-center
           .col-md-6.mb-4.mb-md-0
-            p Cuando la función de densidad de probabilidad de una distribución continua tiene múltiples máximos locales, es común referirse a todos los máximos locales como modos de la distribución. Esta distribución continua se denomina multimoda (en contraposición a unimodal). Un modo de una distribución de probabilidad continua se considera a menudo como cualquier valor x en el que su función de densidad de probabilidad tiene un valor máximo localmente, por lo que cualquier pico es un modo.
+            p Cuando la función de densidad de probabilidad de una distribución continua tiene múltiples máximos locales, es común referirse a todos los máximos locales como modos de la distribución. Esta distribución continua se denomina multimodal (en contraposición a unimodal). Un modo de una distribución de probabilidad continua se considera a menudo como cualquier valor x en el que su función de densidad de probabilidad tiene un valor máximo localmente, por lo que cualquier pico es un modo.
           .col-md-6
             figure
               img(src='@/assets/curso/temas/tema1/tema1-22.svg', alt='')
@@ -181,7 +181,7 @@
             p En distribuciones unimodales simétricas, como la distribución normal, la media (si está definida), la mediana y la moda coinciden. Para las muestras, si se sabe que se extraen de una distribución unimodal simétrica, la media de la muestra se puede utilizar como una estimación de la moda poblacional.
         .row.justify-content-center.align-items-center
           .col-md-6.mb-4.mb-md-0
-            p #[strong Moda de una muestra:] La moda de una muestra es el elemento que aparece con mayor frecuencia en la colección. Por ejemplo, la moda de la muestra [1, 3, 6, 6, 6, 6, 7, 7, 12, 12, 17] es 6. Dada la lista de datos [1, 1, 2, 4, 4] su modo no es único. En tal caso, se dice que un conjunto de datos es bimodal, mientras que un conjunto con más de dos modos puede describirse como multimoda.
+            p #[strong Moda de una muestra:] La moda de una muestra es el elemento que aparece con mayor frecuencia en la colección. Por ejemplo, la moda de la muestra [1, 3, 6, 6, 6, 6, 7, 7, 12, 12, 17] es 6. Dada la lista de datos [1, 1, 2, 4, 4] su modo no es único. En tal caso, se dice que un conjunto de datos es bimodal, mientras que un conjunto con más de dos modos puede describirse como multimodal.
           .col-md-6
             figure
               img(src='@/assets/curso/temas/tema1/tema1-24.svg', alt='')
@@ -206,7 +206,7 @@
             i.fas.fa-play(style="color:#25FFFF")
             | Comparación de media, mediana y moda
 
-    p.mb-4(data-aos="fade-right") A diferencia de la media y la mediana, el concepto de moda también tiene sentido para los “datos nominales” (es decir, que no constan de valores numéricos en el caso de la media, ni siquiera de valores ordenados en el caso de la mediana). Por ejemplo, tomando una muestra de apellidos coreanos, uno podría encontrar que “Kim” aparece con más frecuencia que cualquier otro nombre. Entonces “Kim” sería la moda de la muestra. En cualquier sistema de votación donde una pluralidad determina la victoria, un único valor modal determinar al vencedor, mientras que un resultado multimoda requeriría algún procedimiento de desempate.  
+    p.mb-4(data-aos="fade-right") A diferencia de la media y la mediana, el concepto de moda también tiene sentido para los “datos nominales” (es decir, que no constan de valores numéricos en el caso de la media, ni siquiera de valores ordenados en el caso de la mediana). Por ejemplo, tomando una muestra de apellidos coreanos, uno podría encontrar que “Kim” aparece con más frecuencia que cualquier otro nombre. Entonces “Kim” sería la moda de la muestra. En cualquier sistema de votación donde una pluralidad determina la victoria, un único valor modal determinar al vencedor, mientras que un resultado multimodal requeriría algún procedimiento de desempate.  
 
     .row.justify-content-center.align-items-center.mb-4
       .col-12.col-lg-10(data-aos="fade-right")
@@ -616,7 +616,7 @@
               .h2.text-white D
           .tarjeta.tarjeta--custom
             .p-4
-              p.mb-0 La forma general de cada tipo de regresión es: Fórmula de la recta de regresión simple: #[strong Y = a + bX + u]
+              p.mb-0 La forma general de cada tipo de regresión es: fórmula de la recta de regresión simple: #[strong Y = a + bX + u]
               p Fórmula de la recta de regresión múltiple: #[strong Y = a + b1X1 + b2 X2 + b3 X3 + … + bt Xt + u]
 
               h6 Donde:
